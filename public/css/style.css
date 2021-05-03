@@ -25,6 +25,11 @@ body {
     font-family: Montserrat, sans-serif!important;
 }
 
+#about {
+    background-color: #202c1c;
+    position: relative;
+    padding-top: 50px;
+}
 
 
 @media only screen and (max-width: 450px){

@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/mystyle.css')}}">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="67">
@@ -240,6 +241,114 @@
 </section>
 <!-- end faq -->
 
+<!-- Map -->
+<section id="about">
+    <div class="bg-all map-section">
+        <div class="container dt">
+            <div class="row vm">
+                <div class="col-md-10 offset-md-1 text-center main-text"><h1
+                        class="map-title">Карта Казахстана</h1>
+                    <p>ТемирТрансСервис на карте Казахстана</p></div>
+                <div class="col-lg-12 p-0 px-md-3">
+                    <div id="container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="point-wrapper">
+        <div class="kr-sidebar map-sidebar"></div>
+        <div class="tor-sidebar map-sidebar"></div>
+    </div>
+</section>
+<!-- End Map -->
+
+<!-- start testimonial -->
+<section class="section" id="partner">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-12 mb-4">
+                <h4 class="fw-semibold mb-3">Партнеры</h4>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4 col-lg-4 mb-5">
+                <div class="client-review">
+                    <div class="name position-relative">
+                        <img class="img-fluid" src="images/part-1.png" alt="">
+                        <h6 class="mt-4 fw-semibold">АО «НК» «КТЖ»</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 mb-5">
+                <div class="client-review">
+                    <div class="name position-relative">
+                        <img class="img-fluid" src="images/part-2.png" alt="">
+                        <h6 class="mt-4 fw-semibold">Камкор Менеджмент</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 mb-5">
+                <div class="client-review">
+                    <div class="name position-relative">
+                        <img class="img-fluid" src="images/part-3.png" alt="">
+                        <h6 class="mt-4 fw-semibold">ТОО «Богатырь Транс»</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 mb-5">
+                <div class="client-review">
+                    <div class="name position-relative">
+                        <img class="img-fluid" src="images/part-4.png" alt="">
+                        <h6 class="mt-4 fw-semibold">АО «Қазтеміртранс»</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 mb-5">
+                <div class="client-review">
+                    <div class="name position-relative">
+                        <img class="img-fluid" src="images/part-5.png" alt="">
+                        <h6 class="mt-4 fw-semibold">ТОО «КТЖ - Грузовые перевозки»</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 mb-5">
+                <div class="client-review">
+                    <div class="name position-relative">
+                        <img class="img-fluid" src="images/part-6.png" alt="">
+                        <h6 class="mt-4 fw-semibold">Transgroup Systems OÜ</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 mb-5">
+                <div class="client-review">
+                    <div class="name position-relative">
+                        <img class="img-fluid" src="images/part-7.png" alt="">
+                        <h6 class="mt-4 fw-semibold">Акмолинский вагоноремонтный завод</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 mb-5">
+                <div class="client-review">
+                    <div class="name position-relative">
+                        <img class="img-fluid" src="images/part-8.png" alt="">
+                        <h6 class="mt-4 fw-semibold">ТОО «Astana Railway Services»</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 mb-5">
+                <div class="client-review">
+                    <div class="name position-relative">
+                        <img class="img-fluid" src="images/part-9.png" alt="">
+                        <h6 class="mt-4 fw-semibold">ТОО «Вагонсервис НС»</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <!-- start testimonial -->
 <section class="section" id="client">
     <div class="container">
@@ -280,6 +389,8 @@
         </div>
     </div>
 </section>
+
+
 
 <!-- start subscription -->
 <section class="service-section overflow-hidden" id="contact">
@@ -498,8 +609,10 @@
     </div>
 </div>
 <!-- end modal -->
-
+<script src="http://code.jquery.com/jquery.js"></script>
 <script src="{{asset('js/app.js')}}"></script>
+<script src="{{asset('js/mapdata.js')}}"></script>
+<script src="{{asset('js/map.js')}}"></script>
 </body>
 
 </html>
