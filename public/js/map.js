@@ -67,7 +67,7 @@ const mychart = Highcharts.mapChart('container', {
         // },
         followPointer: false,
         style:{
-            fontFamily:"Roboto, sans-serif",
+            fontFamily:"Montserrat, sans-serif",
         },
         formatter: function (){
             switch (this.point.name){
@@ -245,7 +245,7 @@ const mychart = Highcharts.mapChart('container', {
 
                 strokeOpacity: 0,
                 fill:"red",
-                fontFamily:"Roboto",
+                fontFamily:"Montserrat",
                 fontSize: screen.width>768 ? "10px" : "6px",
                 textShadow:"none",
                 fontWeight:700,

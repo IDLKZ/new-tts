@@ -26,12 +26,31 @@ body {
 }
 
 #about {
-    background-color: #202c1c;
+    background-color: #f9f9fd;
     position: relative;
     padding-top: 50px;
 }
-
-
+#structure {
+    background-color: #f9f9fd;
+    position: relative;
+}
+#structure .card {
+    height: 320px;
+}
+#structure .card h5 {
+    text-align: center;
+}
+.accordion-item {
+    padding: 15px 15px;
+    border: 1px solid black;
+    border-radius: 7px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+.docs {
+    background: white;
+    border-radius: 24px;
+}
 @media only screen and (max-width: 450px){
     .bg-service2 img {
         width: 100%!important;
