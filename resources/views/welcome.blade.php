@@ -192,7 +192,7 @@
     <section class="section bg-light overflow-hidden" id="feature">
         <div class="container">
             <div class="row align-items-center">
-                <h3 class="fw-semibold lh-base mb-4">Сервисное обслуживание</h3>
+                <h3 class="fw-semibold lh-base mb-4 text-center">Сервисное обслуживание</h3>
                 <div class="col-lg-6 mt-lg-0 mt-5 pt-lg-0 pt-4 m-m-0">
 
                     <p class="fw-semibold">
@@ -259,7 +259,7 @@
     <!-- start structure -->
     <section class="section" id="structure">
         <div class="container">
-            <h3 class="fw-semibold lh-base mb-4">Структура</h3>
+            <h3 class="fw-semibold lh-base mb-4 text-center">Структура</h3>
             <div class="row">
                 <div class="col-md-12 col-lg-12 col-sm-12 mb-3">
                     <div class="card h-auto">
