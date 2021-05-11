@@ -1,5 +1,94 @@
 @extends('layout')
+@push('page_css')
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <style>
+        .play-btn {
+            width: 100px;
+            height: 100px;
+            background: radial-gradient( rgba(255, 0, 128, 0.8) 60%, rgba(255, 255, 255, 1) 62%);
+            border-radius: 50%;
+            position: relative;
+            display: block;
+            /*margin: 100px auto;*/
+            box-shadow: 0 0 25px 3px rgba(255, 0, 128, 0.8);
+        }
 
+        /* triangle */
+        .play-btn::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translateX(-40%) translateY(-50%);
+            transform: translateX(-40%) translateY(-50%);
+            transform-origin: center center;
+            width: 0;
+            height: 0;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-left: 25px solid #fff;
+            z-index: 100;
+            -webkit-transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+            transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        }
+
+        /* pulse wave */
+        .play-btn:before {
+            content: "";
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+            -webkit-animation: pulsate1 2s;
+            animation: pulsate1 2s;
+            -webkit-animation-direction: forwards;
+            animation-direction: forwards;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-timing-function: steps;
+            animation-timing-function: steps;
+            opacity: 1;
+            border-radius: 50%;
+            border: 5px solid rgba(255, 255, 255, .75);
+            top: -25%;
+            left: -25%;
+            background: rgba(198, 16, 0, 0);
+        }
+
+        @-webkit-keyframes pulsate1 {
+            0% {
+                -webkit-transform: scale(0.6);
+                transform: scale(0.6);
+                opacity: 1;
+                box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+            }
+            100% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                opacity: 0;
+                box-shadow: none;
+
+            }
+        }
+
+        @keyframes pulsate1 {
+            0% {
+                -webkit-transform: scale(0.6);
+                transform: scale(0.6);
+                opacity: 1;
+                box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+            }
+            100% {
+                -webkit-transform: scale(1, 1);
+                transform: scale(1);
+                opacity: 0;
+                box-shadow: none;
+
+            }
+        }
+    </style>
+@endpush
 @section('content')
 
     <!-- start hero -->
@@ -11,6 +100,8 @@
                     <h6 class="text-white lh-base fw-700 mb-4 pb-3">
                         ТОО «ТемирТрансСервис» предоставляет полный комплекс услуг по ремонту грузовых вагонов и поставке запасных частей, как на территории Республики Казахстан, так и на территории СНГ.
                     </h6>
+{{--                    <a class="fancybox button button-play" data-fancybox="" href="https://vimeo.com/248419121"></a>--}}
+                    <a data-fancybox href="https://vimeo.com/191947042" class="play-btn"></a>
                 </div>
             </div>
         </div>
@@ -37,7 +128,7 @@
                         Преимущества сотрудничества:</h4>
                 </div>
             </div>
-            <div class="row">
+            <div class="row adv">
                 <div class="col-md-4 col-lg-4 col-sm-12">
                     <div class="row">
                         <div class="col-md-3 col-lg-3 col-sm-3 row justify-content-center align-items-center">
@@ -102,7 +193,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <h3 class="fw-semibold lh-base mb-4">Сервисное обслуживание</h3>
-                <div class="col-lg-6 mt-lg-0 mt-5 pt-lg-0 pt-4">
+                <div class="col-lg-6 mt-lg-0 mt-5 pt-lg-0 pt-4 m-m-0">
 
                     <p class="fw-semibold">
                         Сервисное обслуживание - это комплексная услуга, включающая полный цикл работ ремонту вагонов, отслеживания технического состояния вагонов, поставку запчастей и другие услуги, связанные с содержанием вагонного парка в технически исправном состоянии.
@@ -112,23 +203,23 @@
 
                     <div class="row mt-5">
                         <div class="col-md-4">
-                            •	Хранение запасных частей; <br><br><br>
-                            •	Оплата простоя вагонов в ожидании ремонта на станционных путях;<br><br><br>
+                            •	Хранение запасных частей; <br><br><br class="d-md-block d-none">
+                            •	Оплата простоя вагонов в ожидании ремонта на станционных путях;<br><br><br class="d-md-block d-none">
                             •	Хранение и дальнейший выкуп металлолома у заказчика;
                         </div>
                         <div class="col-md-4">
                             •	Круглосуточное слежение за вагонами;<br><br>
-                            •	Доставка запасных частей к месту ремонта;<br><br><br><br>
+                            •	Доставка запасных частей к месту ремонта;<br><br><br class="d-md-block d-none"><br class="d-md-block d-none">
                             •	Ремонт запасных частей (колесные пары, литые детали тележек, автосцепки и т.д.);
                         </div>
                         <div class="col-md-4">
-                            <br><br><br><br>
+                            <br><br class="d-md-block d-none"><br class="d-md-block d-none"><br class="d-md-block d-none">
                             •	Закуп всех запасных частей (колесные пары, литые детали тележек, автосцепки и т.д.);<br><br>
                             •	Организация ремонтов (деповской, текущий отцепочный ремонт);
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 bg-service text-center">
+                <div class="col-lg-6 bg-service text-center m-mt-40">
                     <img src="{{asset('images/bg-service.png')}}" alt="">
                 </div>
             </div>
@@ -143,19 +234,19 @@
                 <div class="col-lg-6 bg-service2 text-left">
                     <img src="{{asset('images/bg-service2.png')}}" alt="">
                 </div>
-                <div class="col-lg-6 mt-lg-0 mt-5 pt-lg-0 pt-4">
-                    <div class="row mt-5">
+                <div class="col-lg-6 mt-lg-0 mt-md-5 mt-sm-0 pt-lg-0 pt-4">
+                    <div class="row mt-md-5 mt-sm-0">
                         <div class="col-md-4">
-                            •	Организация передислокации вагонов от станции отцепки до станции ремонта <br><br><br>
-                            •	Организация подачи/уборки грузовых вагонов в ремонт<br><br><br><br>
+                            •	Организация передислокации вагонов от станции отцепки до станции ремонта <br><br><br class="d-md-block d-none">
+                            •	Организация подачи/уборки грузовых вагонов в ремонт<br><br><br class="d-md-block d-none"><br class="d-md-block d-none">
                             •	Проведение рекламационно-претензионной работы
                         </div>
-                        <div class="col-md-4">
-                            •	Участие в расследованиях случаев нарушений безопасности движения<br><br><br>
-                            •	Оформление и раскредитовка перевозочных документов в системе АСУ ДКР<br><br><br>
+                        <div class="col-md-4 m-pt-30">
+                            •	Участие в расследованиях случаев нарушений безопасности движения<br><br><br class="d-md-block d-none">
+                            •	Оформление и раскредитовка перевозочных документов в системе АСУ ДКР<br><br><br class="d-md-block d-none">
                             •	Участие в расследованиях случаев разоборудования и хищения деталей на станционных и подъездных путях
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 m-pt-30">
                             •	Обеспечение сохранности вагонов на станционных и подъездных путях<br><br>
                         </div>
                     </div>
@@ -538,6 +629,19 @@
 
 @endsection
 @push('page_js')
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="{{asset('js/mapdata.js')}}"></script>
     <script src="{{asset('js/map.js')}}"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script>
+        $('[data-fancybox]').fancybox({
+            youtube : {
+                controls : 0,
+                showinfo : 0
+            },
+            vimeo : {
+                color : 'f00'
+            }
+        });
+    </script>
 @endpush
