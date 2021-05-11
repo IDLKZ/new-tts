@@ -629,11 +629,16 @@
 
 @endsection
 @push('page_js')
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
     <script src="{{asset('js/mapdata.js')}}"></script>
     <script src="{{asset('js/map.js')}}"></script>
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-    <script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-lazy@1.7.10/jquery.lazy.min.js" defer></script>
+    <script defer>
+        $(function (){
+            $('.play-btn').Lazy();
+        })
+
         $('[data-fancybox]').fancybox({
             youtube : {
                 controls : 0,
