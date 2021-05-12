@@ -474,7 +474,7 @@
                 <div class="col-md-4 col-lg-4 mb-4">
                     <div class="client-review">
                         <div class="name position-relative">
-                            <img class="img-fluid" src="images/boss1.png" alt="">
+                            <img class="img-fluid" src="images/team/zphslXDKUOTJuo60.png" alt="">
                             <h5 class="mt-4 fw-semibold"> Ахметов Сапар Кайратович</h5>
                             <p class="text-muted">ПРЕДСЕДАТЕЛЬ ПРАВЛЕНИЯ</p>
                         </div>
@@ -483,7 +483,7 @@
                 <div class="col-md-4 col-lg-4 mb-4">
                     <div class="client-review">
                         <div class="name position-relative">
-                            <img class="img-fluid" src="images/boss2.png" alt="">
+                            <img class="img-fluid" src="images/team/zphslXDKUOTJuo60.png" alt="">
                             <h5 class="mt-4 fw-semibold"> Айтмаганбетов Максутбек Дуйсенбекулы</h5>
                             <p class="text-muted">ИСПОЛНИТЕЛЬНЫЙ ДИРЕКТОР</p>
                         </div>
@@ -492,7 +492,7 @@
                 <div class="col-md-4 col-lg-4">
                     <div class="client-review">
                         <div class="name position-relative">
-                            <img class="img-fluid" src="images/boss3.png" alt="">
+                            <img class="img-fluid" src="images/team/zphslXDKUOTJuo60.png" alt="">
                             <h5 class="mt-4 fw-semibold"> Айтмаганбетов Максутбек Дуйсенбекулы</h5>
                             <p class="text-muted">ИСПОЛНИТЕЛЬНЫЙ ДИРЕКТОР</p>
                         </div>
