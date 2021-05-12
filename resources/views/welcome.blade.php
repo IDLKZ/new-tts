@@ -101,7 +101,7 @@
                         ТОО «ТемирТрансСервис» предоставляет полный комплекс услуг по ремонту грузовых вагонов и поставке запасных частей, как на территории Республики Казахстан, так и на территории СНГ.
                     </h6>
 {{--                    <a class="fancybox button button-play" data-fancybox="" href="https://vimeo.com/248419121"></a>--}}
-                    <a data-fancybox href="https://youtu.be/YHf35s1hPZw" class="play-btn"></a>
+                    <a data-fancybox href="https://www.youtube.com/watch?v=YHf35s1hPZw" class="play-btn"></a>
                 </div>
             </div>
         </div>
