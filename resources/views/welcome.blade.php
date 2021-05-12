@@ -5,12 +5,12 @@
         .play-btn {
             width: 100px;
             height: 100px;
-            background: radial-gradient( rgba(255, 0, 128, 0.8) 60%, rgba(255, 255, 255, 1) 62%);
+            background: radial-gradient( rgba(62, 100, 246, 0.8) 60%, rgba(255, 255, 255, 1) 62%);
             border-radius: 50%;
             position: relative;
             display: block;
             /*margin: 100px auto;*/
-            box-shadow: 0 0 25px 3px rgba(255, 0, 128, 0.8);
+            box-shadow: 0 0 25px 3px rgba(62, 100, 246, 0.8);
         }
 
         /* triangle */
@@ -101,7 +101,7 @@
                         ТОО «ТемирТрансСервис» предоставляет полный комплекс услуг по ремонту грузовых вагонов и поставке запасных частей, как на территории Республики Казахстан, так и на территории СНГ.
                     </h6>
 {{--                    <a class="fancybox button button-play" data-fancybox="" href="https://vimeo.com/248419121"></a>--}}
-                    <a data-fancybox href="https://vimeo.com/191947042" class="play-btn"></a>
+                    <a data-fancybox href="https://vimeo.com/548259065" class="play-btn"></a>
                 </div>
             </div>
         </div>
