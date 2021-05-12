@@ -3,8 +3,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <style>
         .play-btn {
-            width: 100px;
-            height: 100px;
+            width: 80px;
+            height: 80px;
             background: radial-gradient( rgba(62, 100, 246, 0.8) 60%, rgba(255, 255, 255, 1) 62%);
             border-radius: 50%;
             position: relative;
@@ -101,7 +101,7 @@
                         ТОО «ТемирТрансСервис» предоставляет полный комплекс услуг по ремонту грузовых вагонов и поставке запасных частей, как на территории Республики Казахстан, так и на территории СНГ.
                     </h6>
 {{--                    <a class="fancybox button button-play" data-fancybox="" href="https://vimeo.com/248419121"></a>--}}
-                    <a data-fancybox href="https://vimeo.com/548259065" class="play-btn"></a>
+                    <a data-fancybox href="https://youtu.be/YHf35s1hPZw" class="play-btn"></a>
                 </div>
             </div>
         </div>
