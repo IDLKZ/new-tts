@@ -674,10 +674,6 @@ aside[id="#id-slider-breadcrumbs"] .slidr-breadcrumbs li.active {
     .nav-link {
         right: 14% !important;
     }
-    #about {
-        /* padding-top: 100px; */
-        background-color: #000;
-    }
     .map-title {
         margin-top: -41px;
     }

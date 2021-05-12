@@ -11,7 +11,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- favicon -->
-    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--End Favicon-->
 
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
@@ -24,8 +41,8 @@
 <nav class="navbar navbar-expand-lg navbar-light fixed-top sticky" id="navbar">
     <div class="container">
         <a href="#" class="navbar-brand me-5">
-            <img src="images/logo.png" class="logo-light" alt="" height="22" />
-            <img src="images/logo.png" class="logo-dark" alt="" height="22" />
+            <img src="images/logo.png" class="logo-light" alt="" height="22" style="height: 50px"/>
+            <img src="images/logo.png" class="logo-dark" alt="" height="22" style="height: 45px"/>
 
         </a>
         <a href="javascript:void(0)" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,14 +84,14 @@
         <div class="row">
             <div class="col-lg-4 col-sm-6">
                 <div class="row">
-                    <div class="col-md-3 col-lg-3 text-center">
+                    <div class="col-md-8 col-lg-8 text-center">
                         <a href="#">
-                            <img src="images/logo.png" alt="" />
+                            <img src="images/logo-footer.png" alt="logo" style="width: 100%"/>
                         </a>
                     </div>
-                    <div class="col-md-9 col-lg-9">
-                        <span class="fw-700 fs-24 text-white">Темир <br class="d-md-block d-lg-block d-none"> Транс <br class="d-md-block d-lg-block d-none"> Сервис</span>
-                    </div>
+{{--                    <div class="col-md-9 col-lg-9">--}}
+{{--                        <span class="fw-700 fs-24 text-white">Темир <br class="d-md-block d-lg-block d-none"> Транс <br class="d-md-block d-lg-block d-none"> Сервис</span>--}}
+{{--                    </div>--}}
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">

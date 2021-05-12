@@ -549,9 +549,9 @@
                     <img class="img-fluid mt-sm-0 mt-5" src="images/subscribe-img.png" alt="">
                     <h5 class="mt-5 mb-3 fw-semibold"><b>Контакты</b></h5>
                     <div class="row align-items-end">
-                        <div class="col-md-8">
+                        <div class="col-md-12">
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-12 d-flex justify-content-start align-items-center">
                                     <svg width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g filter="url(#filter0_d)">
                                             <rect x="9" y="7" width="45" height="45" rx="22.5" fill="white"/>
@@ -569,6 +569,9 @@
                                             </filter>
                                         </defs>
                                     </svg>
+                                    <div><b>+7 (7172) 61-06-26</b> <br><b>+7 (778) 662-89-60</b></div>
+                                </div>
+                                <div class="col-md-12 d-flex justify-content-start align-items-center fw-700">
                                     <svg width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g filter="url(#filter0_d)">
                                             <rect x="9" y="7" width="45" height="45" rx="22.5" fill="white"/>
@@ -586,6 +589,9 @@
                                             </filter>
                                         </defs>
                                     </svg>
+                                    <b>tts@ttservice.kz</b>
+                                </div>
+                                <div class="col-md-12 d-flex justify-content-start align-items-center fw-700">
                                     <svg width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g filter="url(#filter0_d)">
                                             <rect x="9" y="7" width="45" height="45" rx="22.5" fill="white"/>
@@ -603,23 +609,17 @@
                                             </filter>
                                         </defs>
                                     </svg>
-                                </div>
-                                <div class="col-md-8 fw-700">
-                                    <b>+7 (7172) 77-77-77
-                                        вн. 777</b> <br><br>
-                                    <b>admin@ttservice.kz</b> <br><br>
                                     <b>Республика Казахстан,
-                                        г.Нур-Султан, ул.Абая 77, 7 этаж.</b>
-
+                                        г.Нур-Султан, ул.Кунаева 10, 26 этаж.</b>
                                 </div>
                             </div>
 
                         </div>
-                        <div class="col-md-4 pb-4">
-                            <a href="#"><img src="https://img.icons8.com/carbon-copy/40/000000/facebook-new.png"/></a>
-                            <a href="#"><img src="https://img.icons8.com/carbon-copy/40/000000/twitter--v1.png"/></a>
-                            <a href="#"><img src="https://img.icons8.com/carbon-copy/40/000000/instagram-new.png"/></a>
-                        </div>
+{{--                        <div class="col-md-4 pb-4">--}}
+{{--                            <a href="#"><img src="https://img.icons8.com/carbon-copy/40/000000/facebook-new.png"/></a>--}}
+{{--                            <a href="#"><img src="https://img.icons8.com/carbon-copy/40/000000/twitter--v1.png"/></a>--}}
+{{--                            <a href="#"><img src="https://img.icons8.com/carbon-copy/40/000000/instagram-new.png"/></a>--}}
+{{--                        </div>--}}
                     </div>
                 </div>
             </div>

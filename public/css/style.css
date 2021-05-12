@@ -60,6 +60,10 @@ body {
     }
     .adv img {
         width: 100px;
+        height: 100px;
+    }
+    .adv {
+        text-align: center!important;
     }
     .m-p-0 {
         padding: 0!important;
@@ -72,5 +76,9 @@ body {
     }
     .m-pt-30 {
         padding-top: 30px;
+    }
+    .bg-service img {
+        width: 97%;
+        height: 88%;
     }
 }
