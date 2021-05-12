@@ -82,16 +82,18 @@
 <footer class="footer bg-footer">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-sm-6">
+            <div class="col-lg-5 col-sm-6">
                 <div class="row">
-                    <div class="col-md-8 col-lg-8 text-center">
+                    <div class="col-md-3 col-lg-3 text-center">
                         <a href="#">
                             <img src="images/logo-footer.png" alt="logo" style="width: 100%"/>
                         </a>
                     </div>
-{{--                    <div class="col-md-9 col-lg-9">--}}
-{{--                        <span class="fw-700 fs-24 text-white">Темир <br class="d-md-block d-lg-block d-none"> Транс <br class="d-md-block d-lg-block d-none"> Сервис</span>--}}
-{{--                    </div>--}}
+                    <div class="col-md-9 col-lg-9">
+                        <span class="fs-16 text-white">
+                            ТОО "ТемирТрансСервис" - компания осуществляющая деятельность по Сервисному обслуживанию грузовых вагонов на территории Республики Казахстан и за его пределами.
+                        </span>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
@@ -103,7 +105,7 @@
                     <li class="py-2"><a class="fs-15" href="{{route('main')}}#contact"><span class="icon fs-12 me-2">∎</span> Контакты</a></li>
                 </ul>
             </div>
-            <div class="col-lg-4 offset-lg-1">
+            <div class="col-lg-4">
                 <ul class="list-unstyled footer-list text-white fw-700">
                     <li class="py-2"><a class="fs-15" href="{{route('management')}}"><span class="icon fs-12 me-2">∎</span> Руководство</a></li>
                     <li class="py-2"><a class="fs-15" href="{{route('docs')}}"><span class="icon fs-12 me-2">∎</span> Документы</a></li>
