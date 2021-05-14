@@ -651,7 +651,7 @@
     <!-- start subscription -->
     <section class="service-section overflow-hidden" id="contact">
         <div class="container">
-            <div class="row align-items-center bg-light rounded p-4">
+            <div class="row align-items-center rounded p-4">
                 <div class="col-lg-6">
                     <h3 class="mb-4 fw-semibold">Оставить заявку</h3>
                     <form method="post" name="myForm">
@@ -659,21 +659,6 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="row">
-                                    <div class="col-md-12 mb-3">
-                                        <input type="text" name="title" class="form-control" placeholder="Тема cообщения *"/>
-                                    </div>
-                                    <!-- end col -->
-                                    <div class="col-md-6 mb-3">
-                                        <input type="text" name="name" class="form-control" placeholder="Имя *"/>
-                                    </div>
-                                    <!-- end col -->
-                                    <div class="col-md-6 mb-3">
-                                        <input type="text" name="surname" class="form-control" placeholder="Фамилия *"/>
-                                    </div>
-                                    <!-- end col -->
-                                    <div class="col-12 mb-3">
-                                        <input type="email" class="form-control" name="email" placeholder="Почта *"/>
-                                    </div>
                                     <!-- end col -->
                                     <div class="col-12 mb-3">
                                         <input type="text" class="form-control" name="phone" placeholder="Телефон *"/>
@@ -688,10 +673,15 @@
                         </div>
                         <!-- end row -->
                     </form>
+
                 </div>
                 <div class="col-lg-5 offset-lg-1">
-                    <img class="img-fluid mt-sm-0 mt-5" src="images/subscribe-img.png" alt="">
-                    <h5 class="mt-5 mb-3 fw-semibold"><b>Контакты</b></h5>
+                    <img class="img-fluid mt-sm-0 mt-5" src="images/subscribe-img2.png" alt="">
+                </div>
+            </div>
+            <div class="row px-4">
+                <div class="col-lg-8">
+                    <h3 class="mt-5 mb-3 fw-semibold"><b>Контакты</b></h3>
                     <div class="row align-items-end">
                         <div class="col-md-12">
                             <div class="row">
@@ -757,14 +747,15 @@
                                         г.Нур-Султан, ул.Кунаева 10, 26 этаж.</b>
                                 </div>
                             </div>
-
                         </div>
-{{--                        <div class="col-md-4 pb-4">--}}
-{{--                            <a href="#"><img src="https://img.icons8.com/carbon-copy/40/000000/facebook-new.png"/></a>--}}
-{{--                            <a href="#"><img src="https://img.icons8.com/carbon-copy/40/000000/twitter--v1.png"/></a>--}}
-{{--                            <a href="#"><img src="https://img.icons8.com/carbon-copy/40/000000/instagram-new.png"/></a>--}}
-{{--                        </div>--}}
                     </div>
+                </div>
+                <div class="col-lg-4 d-flex align-items-end">
+{{--                    <div class="col-md-4 pb-4">--}}
+                        <a href="#"><img src="https://img.icons8.com/carbon-copy/40/000000/facebook-new.png"/></a>
+                        <a href="#"><img src="https://img.icons8.com/carbon-copy/40/000000/twitter--v1.png"/></a>
+                        <a href="#"><img src="https://img.icons8.com/carbon-copy/40/000000/instagram-new.png"/></a>
+{{--                    </div>--}}
                 </div>
             </div>
         </div>
