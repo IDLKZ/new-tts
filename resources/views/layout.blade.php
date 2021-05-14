@@ -41,8 +41,8 @@
 <nav class="navbar navbar-expand-lg navbar-light fixed-top sticky" id="navbar">
     <div class="container">
         <a href="#" class="navbar-brand me-5">
-            <img src="images/logo.png" class="logo-light" alt="" style="height: 70px;position: absolute;top: 5px"/>
-            <img src="images/logo.png" class="logo-dark" alt="" style="height: 55px;position: absolute;top: 5px"/>
+            <img src="images/logo.png" class="logo-light" alt=""/>
+            <img src="images/logo.png" class="logo-dark" alt=""/>
 
         </a>
         <a href="javascript:void(0)" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,12 +84,12 @@
         <div class="row">
             <div class="col-lg-5 col-sm-6">
                 <div class="row">
-                    <div class="col-md-3 col-lg-3 text-center">
+                    <div class="col-3 text-center">
                         <a href="#">
                             <img src="images/logo-footer.png" alt="logo" style="width: 100%"/>
                         </a>
                     </div>
-                    <div class="col-md-9 col-lg-9">
+                    <div class="col-9">
                         <span class="fs-16 text-white">
                             ТОО "ТемирТрансСервис" - компания осуществляющая деятельность по Сервисному обслуживанию грузовых вагонов на территории Республики Казахстан и за его пределами.
                         </span>
