@@ -823,7 +823,7 @@
 
 @endsection
 @push('page_js')
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="{{asset('js/mapdata.js')}}"></script>
     <script src="{{asset('js/map.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" defer></script>
@@ -842,5 +842,14 @@
                 color : 'f00'
             }
         });
+    </script>
+    <script>
+        $('.navbar-nav>li>a').on('click', function(){
+            $('.navbar-collapse').collapse('hide');
+        });
+
+        $(window).scroll(function (){
+            $('.navbar-collapse').collapse('hide');
+        })
     </script>
 @endpush
