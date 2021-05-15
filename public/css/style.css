@@ -72,8 +72,8 @@ body {
         width: 100%!important;
     }
     .adv img {
-        width: 100px;
-        height: 100px;
+        width: 100%;
+        height: -moz-available;
     }
     .adv {
         text-align: center!important;

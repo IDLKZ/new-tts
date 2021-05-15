@@ -122,54 +122,62 @@
             <div class="row adv">
                 <div class="col-md-4 col-lg-4 col-sm-12">
                     <div class="row">
-                        <div class="col-md-3 col-lg-3 col-sm-3 row justify-content-center align-items-center">
+                        <div class="col-md-3 col-lg-3 col-3 row justify-content-center align-items-center">
                             <img src="{{asset('images/advant-1.png')}}" alt="" width="45" height="45">
                         </div>
-                        <div class="col-md-9 col-lg-9 col-sm-9 text-left fw-semibold">
+                        <div class="col-md-9 col-lg-9 col-9 text-left fw-semibold">
                             10 региональных участков охватывают всю территорию Казахстана;
                         </div>
-                        <div class="col-md-3 col-lg-3 col-sm-3 row justify-content-center align-items-center">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-lg-3 col-3 row justify-content-center align-items-center">
                             <img src="{{asset('images/advant-2.png')}}" alt="" width="45" height="45">
                         </div>
-                        <div class="col-md-9 col-lg-9 col-sm-9 text-left fw-semibold pt-2">
+                        <div class="col-md-9 col-lg-9 col-9 text-left fw-semibold pt-2">
                             В собственности 4 вагоноремонтных депо, 14 цехов текущего отцепочного ремонта вагонов и 1 пункт подготовки вагонов;
                         </div>
-                        <div class="col-md-3 col-lg-3 col-sm-3 row justify-content-center align-items-center">
+                    </div>
+                    <div class="row mb-sm-2">
+                        <div class="col-md-3 col-lg-3 col-3 row justify-content-center align-items-center">
                             <img src="{{asset('images/advant-3.png')}}" alt="" width="45" height="45">
                         </div>
-                        <div class="col-md-9 col-lg-9 col-sm-9 text-left fw-semibold pt-2">
+                        <div class="col-md-9 col-lg-9 col-9 text-left fw-semibold pt-2">
                             Представители нашей компании присутствуют на 60-ти основных станциях для организации контроля качества ремонта вагонов;
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-4 col-sm-12">
                     <div class="row">
-                        <div class="col-md-3 col-lg-3 col-sm-3 row justify-content-center align-items-center">
+                        <div class="col-md-3 col-lg-3 col-3 row justify-content-center align-items-center">
                             <img src="{{asset('images/advant-4.png')}}" class="mb-4" alt="" width="45" height="45">
                         </div>
-                        <div class="col-md-9 col-lg-9 col-sm-9 text-left fw-semibold">
+                        <div class="col-md-9 col-lg-9 col-9 text-left fw-semibold">
                             Имеется более 50-ти специализированных вагонов для перевозки колесных пар и запасных частей;
                         </div>
-                        <div class="col-md-3 col-lg-3 col-sm-3 row justify-content-center align-items-center">
-                            <img src="{{asset('images/advant-5.png')}}" class="mb-5 mt-3" alt="" width="45" height="45">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-lg-3 col-3 row justify-content-center align-items-center">
+                            <img src="{{asset('images/advant-5.png')}}" class="mb-4 mt-3" alt="" width="45" height="45">
                         </div>
-                        <div class="col-md-9 col-lg-9 col-sm-9 text-left fw-semibold pt-2">
+                        <div class="col-md-9 col-lg-9 col-9 text-left fw-semibold pt-2">
                             Имеются материальные базы на всех ВРД РК с широкой номенклатурой комплектующих;
                         </div>
-                        <div class="col-md-3 col-lg-3 col-sm-3 row justify-content-center align-items-center">
+                    </div>
+                    <div class="row mb-sm-2">
+                        <div class="col-md-3 col-lg-3 col-3 row justify-content-center align-items-center">
                             <img src="{{asset('images/advant-6.png')}}" class="mb-3 mt-3" alt="" width="45" height="45">
                         </div>
-                        <div class="col-md-9 col-lg-9 col-sm-9 text-left fw-semibold">
+                        <div class="col-md-9 col-lg-9 col-9 text-left fw-semibold">
                             Создан диспетчерский центр круглосуточно осуществляет контроль за вагонами на сервисном обслуживании.
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-4 col-sm-12">
                     <div class="row">
-                        <div class="col-md-3 col-lg-3 col-sm-3 row justify-content-center align-items-center">
+                        <div class="col-md-3 col-lg-3 col-3 row justify-content-center align-items-center">
                             <img src="{{asset('images/advant-7.png')}}" class="mb-4" alt="" width="45" height="45">
                         </div>
-                        <div class="col-md-9 col-lg-9 col-sm-9 text-left fw-semibold">
+                        <div class="col-md-9 col-lg-9 col-9 text-left fw-semibold">
                             Нашими партнерами являются все вагоноремонтные предприятия Республики Казахстана и СНГ в части проведения КР, ДР, ТОР;
                         </div>
                     </div>
@@ -724,72 +732,84 @@
                     <div class="row align-items-end">
                         <div class="col-md-12">
                             <div class="row">
-                                <div class="col-md-12 d-flex justify-content-start align-items-center">
-                                    <svg width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g filter="url(#filter0_d)">
-                                            <rect x="9" y="7" width="45" height="45" rx="22.5" fill="white"/>
-                                        </g>
-                                        <path d="M40.4727 32.9766L36.5352 31.2891C36.4297 31.2539 36.3242 31.2188 36.1836 31.2188C35.9375 31.2188 35.6914 31.3594 35.5508 31.5352L33.793 33.6797C31.0508 32.3789 28.8711 30.1992 27.5703 27.457L29.7148 25.6992C29.8906 25.5586 30.0312 25.3125 30.0312 25.0312C30.0312 24.9258 29.9961 24.8203 29.9609 24.7148L28.2734 20.7773C28.1328 20.4609 27.8164 20.25 27.4648 20.25C27.4297 20.25 27.3594 20.2852 27.2891 20.2852L23.6328 21.1289C23.2461 21.2344 23 21.5508 23 21.9375C23 30.9727 30.2773 38.25 39.3125 38.25C39.6992 38.25 40.0156 38.0039 40.1211 37.6172L40.9648 33.9609C40.9648 33.8906 40.9648 33.8203 40.9648 33.7852C40.9648 33.4336 40.7539 33.1172 40.4727 32.9766Z" fill="#343433"/>
-                                        <defs>
-                                            <filter id="filter0_d" x="0.25" y="0.75" width="62.5" height="62.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                                                <feOffset dy="2.5"/>
-                                                <feGaussianBlur stdDeviation="4.375"/>
-                                                <feColorMatrix type="matrix" values="0 0 0 0 0.0588235 0 0 0 0 0.682353 0 0 0 0 0.784314 0 0 0 0.25 0"/>
-                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                                            </filter>
-                                        </defs>
-                                    </svg>
-                                    <div><b>+7 (7172) 61-06-26</b> <br><b>+7 (778) 662-89-60</b></div>
+                                <div class="col-md-12 row justify-content-start align-items-center">
+                                    <div class="col-3">
+                                        <svg width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g filter="url(#filter0_d)">
+                                                <rect x="9" y="7" width="45" height="45" rx="22.5" fill="white"/>
+                                            </g>
+                                            <path d="M40.4727 32.9766L36.5352 31.2891C36.4297 31.2539 36.3242 31.2188 36.1836 31.2188C35.9375 31.2188 35.6914 31.3594 35.5508 31.5352L33.793 33.6797C31.0508 32.3789 28.8711 30.1992 27.5703 27.457L29.7148 25.6992C29.8906 25.5586 30.0312 25.3125 30.0312 25.0312C30.0312 24.9258 29.9961 24.8203 29.9609 24.7148L28.2734 20.7773C28.1328 20.4609 27.8164 20.25 27.4648 20.25C27.4297 20.25 27.3594 20.2852 27.2891 20.2852L23.6328 21.1289C23.2461 21.2344 23 21.5508 23 21.9375C23 30.9727 30.2773 38.25 39.3125 38.25C39.6992 38.25 40.0156 38.0039 40.1211 37.6172L40.9648 33.9609C40.9648 33.8906 40.9648 33.8203 40.9648 33.7852C40.9648 33.4336 40.7539 33.1172 40.4727 32.9766Z" fill="#343433"/>
+                                            <defs>
+                                                <filter id="filter0_d" x="0.25" y="0.75" width="62.5" height="62.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                                                    <feOffset dy="2.5"/>
+                                                    <feGaussianBlur stdDeviation="4.375"/>
+                                                    <feColorMatrix type="matrix" values="0 0 0 0 0.0588235 0 0 0 0 0.682353 0 0 0 0 0.784314 0 0 0 0.25 0"/>
+                                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="col-9">
+                                        <div><b>+7 (7172) 61-06-26</b> <br><b>+7 (778) 662-89-60</b></div>
+                                    </div>
                                 </div>
-                                <div class="col-md-12 d-flex justify-content-start align-items-center fw-700">
-                                    <svg width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g filter="url(#filter0_d)">
-                                            <rect x="9" y="7" width="45" height="45" rx="22.5" fill="white"/>
-                                        </g>
-                                        <path d="M32 20.5312C27.1484 20.5312 23.2812 24.4336 23.2812 29.25C23.2812 34.1016 27.1484 37.9688 32 37.9688C33.6875 37.9688 35.3398 37.4766 36.7461 36.5625C37.168 36.2812 37.2734 35.7188 36.9219 35.332L36.5703 34.875C36.3242 34.5586 35.832 34.4883 35.4805 34.6992C34.4258 35.3672 33.2305 35.7188 32 35.7188C28.4141 35.7188 25.5312 32.8359 25.5312 29.25C25.5312 25.6992 28.4141 22.7812 32 22.7812C35.5156 22.7812 38.4688 24.8203 38.4688 28.4062C38.4688 29.7773 37.6953 31.2188 36.3945 31.3594C35.7969 31.3594 35.7969 30.9023 35.9375 30.3047L36.7461 26.0508C36.8516 25.5234 36.4648 25.0312 35.9375 25.0312H34.3555C34.1094 25.0312 33.8984 25.2422 33.8633 25.4531V25.4883C33.3711 24.8555 32.457 24.7148 31.7539 24.7148C29.1523 24.7148 26.9375 26.8945 26.9375 30.0234C26.9375 32.3438 28.2031 33.75 30.3125 33.75C31.2266 33.75 32.3164 33.2227 32.9141 32.4141C33.2656 33.6094 34.3555 33.6094 35.4102 33.6094C39.2422 33.6094 40.7188 31.0781 40.7188 28.4062C40.7188 23.625 36.8516 20.5312 32 20.5312ZM31.2266 31.2539C30.4531 31.2539 29.9609 30.6914 29.9609 29.8125C29.9609 28.2305 31.0508 27.2461 32 27.2461C32.8086 27.2461 33.2656 27.8086 33.2656 28.6875C33.2656 30.2695 32.0703 31.2539 31.2266 31.2539Z" fill="#343433"/>
-                                        <defs>
-                                            <filter id="filter0_d" x="0.25" y="0.75" width="62.5" height="62.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                                                <feOffset dy="2.5"/>
-                                                <feGaussianBlur stdDeviation="4.375"/>
-                                                <feColorMatrix type="matrix" values="0 0 0 0 0.0588235 0 0 0 0 0.682353 0 0 0 0 0.784314 0 0 0 0.25 0"/>
-                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                                            </filter>
-                                        </defs>
-                                    </svg>
-                                    <b>admin@ttservice.kz</b>
+                                <div class="col-md-12 row justify-content-start align-items-center fw-700">
+                                    <div class="col-3">
+                                        <svg width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g filter="url(#filter0_d)">
+                                                <rect x="9" y="7" width="45" height="45" rx="22.5" fill="white"/>
+                                            </g>
+                                            <path d="M32 20.5312C27.1484 20.5312 23.2812 24.4336 23.2812 29.25C23.2812 34.1016 27.1484 37.9688 32 37.9688C33.6875 37.9688 35.3398 37.4766 36.7461 36.5625C37.168 36.2812 37.2734 35.7188 36.9219 35.332L36.5703 34.875C36.3242 34.5586 35.832 34.4883 35.4805 34.6992C34.4258 35.3672 33.2305 35.7188 32 35.7188C28.4141 35.7188 25.5312 32.8359 25.5312 29.25C25.5312 25.6992 28.4141 22.7812 32 22.7812C35.5156 22.7812 38.4688 24.8203 38.4688 28.4062C38.4688 29.7773 37.6953 31.2188 36.3945 31.3594C35.7969 31.3594 35.7969 30.9023 35.9375 30.3047L36.7461 26.0508C36.8516 25.5234 36.4648 25.0312 35.9375 25.0312H34.3555C34.1094 25.0312 33.8984 25.2422 33.8633 25.4531V25.4883C33.3711 24.8555 32.457 24.7148 31.7539 24.7148C29.1523 24.7148 26.9375 26.8945 26.9375 30.0234C26.9375 32.3438 28.2031 33.75 30.3125 33.75C31.2266 33.75 32.3164 33.2227 32.9141 32.4141C33.2656 33.6094 34.3555 33.6094 35.4102 33.6094C39.2422 33.6094 40.7188 31.0781 40.7188 28.4062C40.7188 23.625 36.8516 20.5312 32 20.5312ZM31.2266 31.2539C30.4531 31.2539 29.9609 30.6914 29.9609 29.8125C29.9609 28.2305 31.0508 27.2461 32 27.2461C32.8086 27.2461 33.2656 27.8086 33.2656 28.6875C33.2656 30.2695 32.0703 31.2539 31.2266 31.2539Z" fill="#343433"/>
+                                            <defs>
+                                                <filter id="filter0_d" x="0.25" y="0.75" width="62.5" height="62.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                                                    <feOffset dy="2.5"/>
+                                                    <feGaussianBlur stdDeviation="4.375"/>
+                                                    <feColorMatrix type="matrix" values="0 0 0 0 0.0588235 0 0 0 0 0.682353 0 0 0 0 0.784314 0 0 0 0.25 0"/>
+                                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="col-9">
+                                        <b>admin@ttservice.kz</b>
+                                    </div>
                                 </div>
-                                <div class="col-md-12 d-flex justify-content-start align-items-center fw-700">
-                                    <svg width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g filter="url(#filter0_d)">
-                                            <rect x="9" y="7" width="45" height="45" rx="22.5" fill="white"/>
-                                        </g>
-                                        <path d="M32 19.5C27.8203 19.5 24.5 22.8984 24.5 27C24.5 29.8125 25.3984 30.6719 30.3984 38.6406C31.1406 39.8125 32.8203 39.8125 33.5625 38.6406C38.5625 30.6719 39.5 29.8125 39.5 27C39.5 22.8594 36.1016 19.5 32 19.5ZM32 37.625C27 29.6562 26.375 29.1484 26.375 27C26.375 23.9141 28.875 21.375 32 21.375C35.0859 21.375 37.625 23.9141 37.625 27C37.625 29.1484 37 29.5781 32 37.625ZM28.875 27C28.875 28.7578 30.2422 30.125 32 30.125C33.7188 30.125 35.125 28.7578 35.125 27C35.125 25.2812 33.7188 23.875 32 23.875C30.2422 23.875 28.875 25.2812 28.875 27Z" fill="#343433"/>
-                                        <defs>
-                                            <filter id="filter0_d" x="0.25" y="0.75" width="62.5" height="62.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                                                <feOffset dy="2.5"/>
-                                                <feGaussianBlur stdDeviation="4.375"/>
-                                                <feColorMatrix type="matrix" values="0 0 0 0 0.0588235 0 0 0 0 0.682353 0 0 0 0 0.784314 0 0 0 0.25 0"/>
-                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                                            </filter>
-                                        </defs>
-                                    </svg>
-                                    <b>Республика Казахстан,
-                                        г.Нур-Султан, ул.Кунаева 10, 26 этаж.</b>
+                                <div class="col-md-12 row justify-content-start align-items-center fw-700">
+                                    <div class="col-3">
+                                        <svg width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g filter="url(#filter0_d)">
+                                                <rect x="9" y="7" width="45" height="45" rx="22.5" fill="white"/>
+                                            </g>
+                                            <path d="M32 19.5C27.8203 19.5 24.5 22.8984 24.5 27C24.5 29.8125 25.3984 30.6719 30.3984 38.6406C31.1406 39.8125 32.8203 39.8125 33.5625 38.6406C38.5625 30.6719 39.5 29.8125 39.5 27C39.5 22.8594 36.1016 19.5 32 19.5ZM32 37.625C27 29.6562 26.375 29.1484 26.375 27C26.375 23.9141 28.875 21.375 32 21.375C35.0859 21.375 37.625 23.9141 37.625 27C37.625 29.1484 37 29.5781 32 37.625ZM28.875 27C28.875 28.7578 30.2422 30.125 32 30.125C33.7188 30.125 35.125 28.7578 35.125 27C35.125 25.2812 33.7188 23.875 32 23.875C30.2422 23.875 28.875 25.2812 28.875 27Z" fill="#343433"/>
+                                            <defs>
+                                                <filter id="filter0_d" x="0.25" y="0.75" width="62.5" height="62.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                                                    <feOffset dy="2.5"/>
+                                                    <feGaussianBlur stdDeviation="4.375"/>
+                                                    <feColorMatrix type="matrix" values="0 0 0 0 0.0588235 0 0 0 0 0.682353 0 0 0 0 0.784314 0 0 0 0.25 0"/>
+                                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="col-9">
+                                        <b>Республика Казахстан,
+                                            г.Нур-Султан, ул.Кунаева 10, 26 этаж.</b>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex align-items-end">
+                <div class="col-lg-4 d-flex align-items-end justify-content-around mt-3">
 {{--                    <div class="col-md-4 pb-4">--}}
                         <a href="#"><img src="https://img.icons8.com/carbon-copy/40/000000/facebook-new.png"/></a>
                         <a href="#"><img src="https://img.icons8.com/carbon-copy/40/000000/twitter--v1.png"/></a>

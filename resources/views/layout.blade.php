@@ -82,7 +82,7 @@
 <footer class="footer bg-footer">
     <div class="container">
         <div class="row">
-            <div class="col-lg-5 col-sm-6">
+            <div class="col-lg-5 col-sm-6 mb-sm-2">
                 <div class="row">
                     <div class="col-3 text-center">
                         <a href="#">
@@ -96,19 +96,19 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-sm-6">
-                <ul class="list-unstyled footer-list text-white fw-700">
-                    <li class="pb-1"><a class="fs-15" href="{{route('main')}}#home"><span class="icon fs-12 me-2">∎</span> О компании</a></li>
-                    <li class="pb-1"><a class="fs-15" href="{{route('main')}}#feature"><span class="icon fs-12 me-2">∎</span> Сервисное обслуживание</a></li>
-                    <li class="pb-1"><a class="fs-15" href="{{route('main')}}#structure"><span class="icon fs-12 me-2">∎</span> Структура</a></li>
-                    <li class="pb-1"><a class="fs-15" href="{{route('main')}}#partner"><span class="icon fs-12 me-2">∎</span> Партнеры</a></li>
-                    <li class="pb-1"><a class="fs-15" href="{{route('main')}}#contact"><span class="icon fs-12 me-2">∎</span> Контакты</a></li>
+            <div class="col-lg-3 col-6 d-flex justify-content-center">
+                <ul class="list-unstyled footer-list text-white fw-700 pl-3">
+                    <li class="pb-1"><a class="fs-15" href="{{route('main')}}#home"><span class="icon fs-12 me-2"></span> О компании</a></li>
+                    <li class="pb-1"><a class="fs-15" href="{{route('main')}}#feature"><span class="icon fs-12 me-2"></span> Сервисное обслуживание</a></li>
+                    <li class="pb-1"><a class="fs-15" href="{{route('main')}}#structure"><span class="icon fs-12 me-2"></span> Структура</a></li>
+                    <li class="pb-1"><a class="fs-15" href="{{route('main')}}#partner"><span class="icon fs-12 me-2"></span> Партнеры</a></li>
+                    <li class="pb-1"><a class="fs-15" href="{{route('main')}}#contact"><span class="icon fs-12 me-2"></span> Контакты</a></li>
                 </ul>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-6 d-flex justify-content-center">
                 <ul class="list-unstyled footer-list text-white fw-700">
-                    <li class="pb-1"><a class="fs-15" href="{{route('management')}}"><span class="icon fs-12 me-2">∎</span> Руководство</a></li>
-                    <li class="pb-1"><a class="fs-15" href="{{route('docs')}}"><span class="icon fs-12 me-2">∎</span> Документы</a></li>
+                    <li class="pb-1"><a class="fs-15" href="{{route('management')}}"><span class="icon fs-12 me-2"></span> Руководство</a></li>
+                    <li class="pb-1"><a class="fs-15" href="{{route('docs')}}"><span class="icon fs-12 me-2"></span> Документы</a></li>
                 </ul>
                 {{--                <div class="card rounded border-0 mt-sm-0 mt-4">--}}
                 {{--                    <div class="map rounded">--}}
