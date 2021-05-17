@@ -96,7 +96,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 d-flex justify-content-center">
+            <div class="col-lg-5 d-flex justify-content-center">
                 <ul class="list-unstyled footer-list text-white fw-700 pl-3">
                     <li class="pb-1"><a class="fs-15" href="{{route('main')}}#home"><span class="icon fs-12 me-2"></span> О компании</a></li>
                     <li class="pb-1"><a class="fs-15" href="{{route('main')}}#feature"><span class="icon fs-12 me-2"></span> Сервисное обслуживание</a></li>
@@ -106,7 +106,7 @@
                     <li class="pb-1 d-sm-block d-md-none d-lg-none"><a class="fs-15" href="{{route('docs')}}"><span class="icon fs-12 me-2"></span> Документы</a></li>
                 </ul>
             </div>
-            <div class="col-lg-3 d-flex justify-content-center">
+            <div class="col-lg-2 d-flex justify-content-start">
                 <ul class="list-unstyled footer-list text-white fw-700">
                     <li class="pb-1 d-sm-none d-md-block d-lg-block"><a class="fs-15" href="{{route('management')}}"><span class="icon fs-12 me-2"></span> Руководство</a></li>
                     <li class="pb-1 d-sm-none d-md-block d-lg-block"><a class="fs-15" href="{{route('docs')}}"><span class="icon fs-12 me-2"></span> Документы</a></li>

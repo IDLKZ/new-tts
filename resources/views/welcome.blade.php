@@ -777,7 +777,7 @@
                                         </svg>
                                     </div>
                                     <div class="col-9">
-                                        <b>admin@ttservice.kz</b>
+                                        <b>tts@ttservice.kz</b>
                                     </div>
                                 </div>
                                 <div class="col-md-12 row justify-content-start align-items-center fw-700">
