@@ -76,6 +76,7 @@ body {
         width: 100%;
         height: max-content;
     }
+    .adv img:first-child {height: auto}
 
     .m-p-0 {
         padding: 0!important;
