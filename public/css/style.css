@@ -52,7 +52,7 @@ body {
 }
 .service-img img {
     margin-right: 15px;
-    height: min-content;
+    height: max-content;
 }
 
 .logo-light {
@@ -74,7 +74,7 @@ body {
     }
     .adv img {
         width: 100%;
-        height: min-content;
+        height: max-content;
     }
 
     .m-p-0 {
