@@ -202,30 +202,8 @@
 
                     <div class="row mt-5 service-img">
                         <div class="col-md-6 col-lg-6 col-sm-12 d-flex mb-sm-2">
-                            <img src="/images/serv-1.png" alt="">
-                            <span>Хранение запасных частей</span>
-                        </div>
-
-                        <div class="col-md-6 col-lg-6 col-sm-12 d-flex">
-                            <img src="/images/serv-2.png" alt="">
-                            <span>Круглосуточное слежение за вагонами</span>
-                        </div>
-                    </div>
-                    <div class="row mt-4 service-img">
-                        <div class="col-md-6 col-lg-6 col-sm-12 d-flex mb-sm-2">
-                            <img src="/images/serv-3.png" alt="">
-                            <span>Оплата простоя вагонов в ожидании ремонта на станционных путях</span>
-                        </div>
-
-                        <div class="col-md-6 col-lg-6 col-sm-12 d-flex">
-                            <img src="/images/serv-4.png" alt="">
-                            <span>Доставка запасных частей к месту ремонта</span>
-                        </div>
-                    </div>
-                    <div class="row mt-4 service-img">
-                        <div class="col-md-6 col-lg-6 col-sm-12 d-flex mb-sm-2">
-                            <img src="/images/serv-5.png" alt="">
-                            <span>Хранение и дальнейший выкуп металлолома у заказчика</span>
+                            <img src="/images/serv-7.png" alt="">
+                            <span>Организация работ по ремонтам (деповской, текущий отцепочный ремонт)</span>
                         </div>
 
                         <div class="col-md-6 col-lg-6 col-sm-12 d-flex">
@@ -235,13 +213,35 @@
                     </div>
                     <div class="row mt-4 service-img">
                         <div class="col-md-6 col-lg-6 col-sm-12 d-flex mb-sm-2">
-                            <img src="/images/serv-7.png" alt="">
-                            <span>Организация ремонтов (деповской, текущий отцепочный ремонт)</span>
+                            <img src="/images/serv-8.png" alt="">
+                            <span>Обеспечение необходимыми запасными частями (колесные пары, литые детали тележек, автосцепки и т.д.)</span>
                         </div>
 
                         <div class="col-md-6 col-lg-6 col-sm-12 d-flex">
-                            <img src="/images/serv-8.png" alt="">
-                            <span>Закуп всех запасных частей (колесные пары, литые детали тележек, автосцепки и т.д.)</span>
+                            <img src="/images/serv-4.png" alt="">
+                            <span>Доставка запасных частей к месту ремонта</span>
+                        </div>
+                    </div>
+                    <div class="row mt-4 service-img">
+                        <div class="col-md-6 col-lg-6 col-sm-12 d-flex mb-sm-2">
+                            <img src="/images/serv-2.png" alt="">
+                            <span>Круглосуточное слежение за вагонами</span>
+                        </div>
+
+                        <div class="col-md-6 col-lg-6 col-sm-12 d-flex">
+                            <img src="/images/serv-5.png" alt="">
+                            <span>Хранение и дальнейший выкуп металлолома у заказчика</span>
+                        </div>
+                    </div>
+                    <div class="row mt-4 service-img">
+                        <div class="col-md-6 col-lg-6 col-sm-12 d-flex mb-sm-2">
+                            <img src="/images/serv-1.png" alt="">
+                            <span>Хранение запасных частей</span>
+                        </div>
+
+                        <div class="col-md-6 col-lg-6 col-sm-12 d-flex">
+                            <img src="/images/serv-3.png" alt="">
+                            <span>Оплата простоя вагонов в ожидании ремонта на станционных путях</span>
                         </div>
                     </div>
                 </div>
@@ -307,7 +307,7 @@
     <section class="section" id="structure">
         <div class="container">
             <h3 class="fw-semibold lh-base mb-4 text-center">Структура</h3>
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-md-12 col-lg-12 col-sm-12 mb-3">
                     <div class="card h-auto">
                         <div class="card-body">
@@ -336,16 +336,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-4 col-sm-12 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">ТОО «Astana Railway Services» -  дочерняя компания</h5>
-                            <p class="card-text">
-                                Сеть вагоноремонтных предприятий на территории Республики Казахстан. В собственности находятся 4 вагоноремонтных депо на станциях Арысь, Балхаш, Кушмурун и Уральск. Силами ТОО «Astana Railway Services» проводится 16% всех плановых видов ремонта в Республики Казахстан. Клиентами являются крупнейшие операторы подвижного состава
-                            </p>
-                        </div>
-                    </div>
-                </div>
+{{--                <div class="col-md-4 col-lg-4 col-sm-12 mb-3">--}}
+{{--                    <div class="card">--}}
+{{--                        <div class="card-body">--}}
+{{--                            <h5 class="card-title">ТОО «Astana Railway Services» -  дочерняя компания</h5>--}}
+{{--                            <p class="card-text">--}}
+{{--                                Сеть вагоноремонтных предприятий на территории Республики Казахстан. В собственности находятся 4 вагоноремонтных депо на станциях Арысь, Балхаш, Кушмурун и Уральск. Силами ТОО «Astana Railway Services» проводится 16% всех плановых видов ремонта в Республики Казахстан. Клиентами являются крупнейшие операторы подвижного состава--}}
+{{--                            </p>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
                 <div class="col-md-4 col-lg-4 col-sm-12 mb-3">
                     <div class="card">
                         <div class="card-body">
@@ -753,7 +753,7 @@
                                         </svg>
                                     </div>
                                     <div class="col-9">
-                                        <div><b>+7 (7172) 61-06-26</b> <br><b>+7 (778) 662-89-60</b></div>
+                                        <div><b>+7 (7172) 61-06-26</b></div>
                                     </div>
                                 </div>
                                 <div class="col-md-12 row justify-content-start align-items-center fw-700">
