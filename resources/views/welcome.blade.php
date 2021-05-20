@@ -195,7 +195,7 @@
                 <div class="col-lg-7 mt-lg-0 mt-5 pt-lg-0 pt-4 m-m-0">
 
                     <p class="fw-semibold">
-                        Сервисное обслуживание - это комплексная услуга, включающая полный цикл работ ремонту вагонов, отслеживания технического состояния вагонов, поставку запчастей и другие услуги, связанные с содержанием вагонного парка в технически исправном состоянии.
+                        Сервисное обслуживание - это комплексная услуга, включающая полный цикл работ по ремонту вагонов, отслеживания технического состояния вагонов, поставку запчастей и другие услуги, связанные с содержанием вагонного парка в технически исправном состоянии.
                     </p><br>
                     <p>В сервисное обслуживание включены расходы на следующие виды работ:
                     </p>
@@ -447,14 +447,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-4 mb-5">
-                    <div class="client-review">
-                        <div class="name position-relative">
-                            <img class="img-fluid" src="images/part-3.png" alt="">
-                            <h6 class="mt-4 fw-semibold">ТОО «Богатырь Транс»</h6>
-                        </div>
-                    </div>
-                </div>
+{{--                <div class="col-md-4 col-lg-4 mb-5">--}}
+{{--                    <div class="client-review">--}}
+{{--                        <div class="name position-relative">--}}
+{{--                            <img class="img-fluid" src="images/part-3.png" alt="">--}}
+{{--                            <h6 class="mt-4 fw-semibold">ТОО «Богатырь Транс»</h6>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
                 <div class="col-md-4 col-lg-4 mb-5">
                     <div class="client-review">
                         <div class="name position-relative">
@@ -471,14 +471,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-4 mb-5">
-                    <div class="client-review">
-                        <div class="name position-relative">
-                            <img class="img-fluid" src="images/part-6.png" alt="">
-                            <h6 class="mt-4 fw-semibold">Transgroup Systems OÜ</h6>
-                        </div>
-                    </div>
-                </div>
+{{--                <div class="col-md-4 col-lg-4 mb-5">--}}
+{{--                    <div class="client-review">--}}
+{{--                        <div class="name position-relative">--}}
+{{--                            <img class="img-fluid" src="images/part-6.png" alt="">--}}
+{{--                            <h6 class="mt-4 fw-semibold">Transgroup Systems OÜ</h6>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
                 <div class="col-md-4 col-lg-4 mb-5">
                     <div class="client-review">
                         <div class="name position-relative">
@@ -495,14 +495,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-4 mb-5">
-                    <div class="client-review">
-                        <div class="name position-relative">
-                            <img class="img-fluid" src="images/part-9.png" alt="">
-                            <h6 class="mt-4 fw-semibold">ТОО «Вагонсервис НС»</h6>
-                        </div>
-                    </div>
-                </div>
+{{--                <div class="col-md-4 col-lg-4 mb-5">--}}
+{{--                    <div class="client-review">--}}
+{{--                        <div class="name position-relative">--}}
+{{--                            <img class="img-fluid" src="images/part-9.png" alt="">--}}
+{{--                            <h6 class="mt-4 fw-semibold">ТОО «Вагонсервис НС»</h6>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
             </div>
         </div>
     </section>
