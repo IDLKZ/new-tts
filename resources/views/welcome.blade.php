@@ -207,8 +207,8 @@
                         </div>
 
                         <div class="col-md-6 col-lg-6 col-sm-12 d-flex">
-                            <img src="/images/serv-6.png" alt="">
-                            <span>Ремонт запасных частей (колесные пары, литые детали тележек, автосцепки и т.д.)</span>
+                            <img src="/images/serv-1.png" alt="">
+                            <span>Хранение запасных частей</span>
                         </div>
                     </div>
                     <div class="row mt-4 service-img">
@@ -218,14 +218,14 @@
                         </div>
 
                         <div class="col-md-6 col-lg-6 col-sm-12 d-flex">
-                            <img src="/images/serv-4.png" alt="">
-                            <span>Доставка запасных частей к месту ремонта</span>
+                            <img src="/images/serv-2.png" alt="">
+                            <span>Круглосуточное слежение за вагонами</span>
                         </div>
                     </div>
                     <div class="row mt-4 service-img">
                         <div class="col-md-6 col-lg-6 col-sm-12 d-flex mb-sm-2">
-                            <img src="/images/serv-2.png" alt="">
-                            <span>Круглосуточное слежение за вагонами</span>
+                            <img src="/images/serv-6.png" alt="">
+                            <span>Ремонт запасных частей (колесные пары, литые детали тележек, автосцепки и т.д.)</span>
                         </div>
 
                         <div class="col-md-6 col-lg-6 col-sm-12 d-flex">
@@ -235,8 +235,8 @@
                     </div>
                     <div class="row mt-4 service-img">
                         <div class="col-md-6 col-lg-6 col-sm-12 d-flex mb-sm-2">
-                            <img src="/images/serv-1.png" alt="">
-                            <span>Хранение запасных частей</span>
+                            <img src="/images/serv-4.png" alt="">
+                            <span>Доставка запасных частей к месту ремонта</span>
                         </div>
 
                         <div class="col-md-6 col-lg-6 col-sm-12 d-flex">
@@ -566,7 +566,7 @@
                                     <div class="card-body">
                                         <div class="row">
                                             <div class="col-md-4 text-center mb-sm-2"><img
-                                                    src="/images/team/l2dWwwuwcuStCHma.jpg" width=200 alt=""
+                                                    src="/images/team/rasima.jpg" width=200 alt=""
                                                     class="page_speed_1782395957"></div>
                                             <div class="col-md-8 my-text pt-2"><p class="card-text">Образование: </p>
                                                 <p class="card-text"></p>
@@ -606,7 +606,7 @@
                                     <div class="card-body">
                                         <div class="row">
                                             <div class="col-md-4 text-center mb-sm-2"><img
-                                                    src="/images/team/MiWHiusI0an8ByI3.jpg" width=200 alt=""
+                                                    src="/images/team/mira.jpg" width=200 alt=""
                                                     class="page_speed_1782395957"></div>
                                             <div class="col-md-8 my-text pt-2"><p class="card-text">Образование: </p>
                                                 <p class="card-text"></p>
