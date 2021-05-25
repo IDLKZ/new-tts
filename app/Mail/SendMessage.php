@@ -11,15 +11,15 @@ class SendMessage extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $request;
+    public $detail;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($request)
+    public function __construct($detail)
     {
-        $this->request = $request;
+        $this->detail = $detail;
     }
 
     /**
@@ -29,7 +29,7 @@ class SendMessage extends Mailable
      */
     public function build()
     {
-        return $this->from('tts@ttservice.kz')
+        return $this->from('support@samgaacademy.com')
             ->subject('Заявка с сайта')
             ->markdown("mail.invite");
     }
