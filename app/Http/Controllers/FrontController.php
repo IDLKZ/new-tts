@@ -25,7 +25,8 @@ class FrontController extends Controller
 
     public function sendMail(Request $request)
     {
-        $this->validate($request,["name"=>"required","email"=>"required|email","phone"=>"required"]);
+        dd($request->all());
+        $this->validate($request,["phone"=>"required"]);
 //        $emails = Email::pluck('email')->toArray();
         $emails = ['nurbakit_5496@mail.ru', 'kurmanov.a@ttservice.kz', 'musin.zh@ttservice.kz'];
         if(count($emails)){
