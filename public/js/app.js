@@ -2469,7 +2469,7 @@ function setLocalStorage(storage, key, value, access) {
 function getSlideId() {
   var id = window.tnsId;
   window.tnsId = !id ? 1 : id + 1;
-  
+
   return 'tns' + window.tnsId;
 }
 
@@ -2511,13 +2511,13 @@ function resetFakeBody (body, docOverflow) {
   }
 }
 
-// get css-calc 
+// get css-calc
 
 function calc() {
-  var doc = document, 
+  var doc = document,
       body = getBody(),
       docOverflow = setFakeBody(body),
-      div = doc.createElement('div'), 
+      div = doc.createElement('div'),
       result = false;
 
   body.appendChild(div);
@@ -2528,13 +2528,13 @@ function calc() {
     for (var i = 0; i < 3; i++) {
       val = vals[i];
       div.style.width = val;
-      if (div.offsetWidth === 100) { 
-        result = val.replace(str, ''); 
+      if (div.offsetWidth === 100) {
+        result = val.replace(str, '');
         break;
       }
     }
   } catch (e) {}
-  
+
   body.fake ? resetFakeBody(body, docOverflow) : div.remove();
 
   return result;
@@ -2576,7 +2576,7 @@ function mediaquerySupport () {
   if (window.matchMedia || window.msMatchMedia) {
     return true;
   }
-  
+
   var doc = document,
       body = getBody(),
       docOverflow = setFakeBody(body),
@@ -2657,7 +2657,7 @@ function toDegree (y, x) {
 function getTouchDirection(angle, range) {
   var direction = false,
       gap = Math.abs(90 - Math.abs(angle));
-      
+
   if (gap >= 90 - range) {
     direction = 'horizontal';
   } else if (gap <= range) {
@@ -2706,7 +2706,7 @@ function getAttr(el, attr) {
 
 function isNodeList(el) {
   // Only NodeList has the "item()" function
-  return typeof el.item !== "undefined"; 
+  return typeof el.item !== "undefined";
 }
 
 function setAttrs(els, attrs) {
@@ -2757,7 +2757,7 @@ function whichProperty(props){
     var arr = [props],
         Props = props.charAt(0).toUpperCase() + props.substr(1),
         prefixes = ['Webkit', 'Moz', 'ms', 'O'];
-        
+
     prefixes.forEach(function(prefix) {
       if (prefix !== 'ms' || props === 'transform') {
         arr.push(prefix + Props);
@@ -2780,7 +2780,7 @@ function whichProperty(props){
 function has3DTransforms(tf){
   if (!tf) { return false; }
   if (!window.getComputedStyle) { return false; }
-  
+
   var doc = document,
       body = getBody(),
       docOverflow = setFakeBody(body),
@@ -2884,8 +2884,8 @@ function jsTransform(element, attr, prefix, postfix, to, duration, callback) {
     duration -= tick;
     from += positionTick;
     element.style[attr] = prefix + from + unit + postfix;
-    if (duration > 0) { 
-      setTimeout(moveElement, tick); 
+    if (duration > 0) {
+      setTimeout(moveElement, tick);
     } else {
       callback();
     }
@@ -5639,7 +5639,7 @@ var slider = tns({
     controls: false,
     autoplay: true,
     autoplayButtonOutput: false,
-    responsive: {        
+    responsive: {
         640: {
             edgePadding: 20,
             gutter: 20,
@@ -5670,7 +5670,7 @@ if (document.getElementsByClassName('testi-slider')[0] != undefined) {
       controls: false,
       autoplay: true,
       autoplayButtonOutput: false,
-      responsive: {        
+      responsive: {
           640: {
               edgePadding: 20,
               gutter: 20,
@@ -5747,55 +5747,55 @@ counter.forEach(counter_value => {
 
 
 // Contact Form
-function validateForm() {
-    var name = document.forms["myForm"]["name"].value;
-    var email = document.forms["myForm"]["email"].value;
-	var subject = document.forms["myForm"]["subject"].value;
-    var number = document.forms["myForm"]["number"].value;	
-    var comments = document.forms["myForm"]["comments"].value;
-    document.getElementById("error-msg").style.opacity = 0;
-    document.getElementById('error-msg').innerHTML = "";
-    if (name == "" || name == null) {
-        document.getElementById('error-msg').innerHTML = "<div class='alert alert-danger error_message'>*Please enter a Name*</div>";
-        fadeIn();
-        return false;
-    }
-    if (email == "" || email == null) {
-        document.getElementById('error-msg').innerHTML = "<div class='alert alert-danger error_message'>*Please enter a Email*</div>";
-        fadeIn();
-        return false;
-    }
-    if (subject == "" || subject == null) {
-        document.getElementById('error-msg').innerHTML = "<div class='alert alert-danger error_message'>*Please enter a Subject*</div>";
-        fadeIn();
-        return false;
-	}
-	if (number == "" || number == null) {
-        document.getElementById('error-msg').innerHTML = "<div class='alert alert-danger error_message'>*Please enter a number*</div>";
-        fadeIn();
-        return false;
-    }
-    if (comments == "" || comments == null) {
-        document.getElementById('error-msg').innerHTML = "<div class='alert alert-danger error_message'>*Please enter a Comments*</div>";
-        fadeIn();
-        return false;
-    }
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("simple-msg").innerHTML = this.responseText;
-            document.forms["myForm"]["name"].value = "";
-            document.forms["myForm"]["email"].value = "";
-			document.forms["myForm"]["subject"].value = "";
-            document.forms["myForm"]["number"].value = "";			
-            document.forms["myForm"]["comments"].value = "";
-        }
-    };
-    xhttp.open("POST", "php/contact.php", true);
-    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xhttp.send("name=" + name + "&email=" + email + "&subject=" + subject + "&number=" + number + "&comments=" + comments);
-    return false;
-}
+// function validateForm() {
+//     var name = document.forms["myForm"]["name"].value;
+//     var email = document.forms["]["email"].value;
+// 	var subject = document.forms["myForm"]["subject"].value;
+//     var number = document.forms["myForm"]["number"].value;
+//     var comments = document.forms["myForm"]["comments"].value;
+//     document.getElementById("error-msg").style.opacity = 0;
+//     document.getElementById('error-msg').innerHTML = "";
+//     if (name == "" || name == null) {
+//         document.getElementById('error-msg').innerHTML = "<div class='alert alert-danger error_message'>*Please enter a Name*</div>";
+//         fadeIn();
+//         return false;
+//     }
+//     if (email == "" || email == null) {
+//         document.getElementById('error-msg').innerHTML = "<div class='alert alert-danger error_message'>*Please enter a Email*</div>";
+//         fadeIn();
+//         return false;
+//     }
+//     if (subject == "" || subject == null) {
+//         document.getElementById('error-msg').innerHTML = "<div class='alert alert-danger error_message'>*Please enter a Subject*</div>";
+//         fadeIn();
+//         return false;
+// 	}
+// 	if (number == "" || number == null) {
+//         document.getElementById('error-msg').innerHTML = "<div class='alert alert-danger error_message'>*Please enter a number*</div>";
+//         fadeIn();
+//         return false;
+//     }
+//     if (comments == "" || comments == null) {
+//         document.getElementById('error-msg').innerHTML = "<div class='alert alert-danger error_message'>*Please enter a Comments*</div>";
+//         fadeIn();
+//         return false;
+//     }
+//     var xhttp = new XMLHttpRequest();
+//     xhttp.onreadystatechange = function () {
+//         if (this.readyState == 4 && this.status == 200) {
+//             document.getElementById("simple-msg").innerHTML = this.responseText;
+//             document.forms["myForm"]["name"].value = "";
+//             document.forms["myForm"]["email"].value = "";
+// 			document.forms["myForm"]["subject"].value = "";
+//             document.forms["myForm"]["number"].value = "";
+//             document.forms["myForm"]["comments"].value = "";
+//         }
+//     };
+//     xhttp.open("POST", "/send", true);
+//     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+//     xhttp.send("name=" + name + "&email=" + email + "&subject=" + subject + "&number=" + number + "&comments=" + comments);
+//     return false;
+// }
 function fadeIn() {
     var fade = document.getElementById("error-msg");
     var opacity = 0;
@@ -5829,7 +5829,7 @@ function setColor(theme) {
 
 
 
-  
+
 
 
 

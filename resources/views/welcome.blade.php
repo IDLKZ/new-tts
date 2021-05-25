@@ -126,7 +126,7 @@
                             <img src="{{asset('images/advant-1.png')}}" alt="" width="45" height="45">
                         </div>
                         <div class="col-md-9 col-lg-9 col-9 text-left fw-semibold">
-                            10 региональных участков охватывают всю территорию Казахстана;
+                            10 региональных участков охватывают всю территорию Казахстана
                         </div>
                     </div>
                     <div class="row">
@@ -134,7 +134,7 @@
                             <img src="{{asset('images/advant-2.png')}}" alt="" width="45" height="45">
                         </div>
                         <div class="col-md-9 col-lg-9 col-9 text-left fw-semibold pt-2">
-                            В собственности 4 вагоноремонтных депо, 14 цехов текущего отцепочного ремонта вагонов и 1 пункт подготовки вагонов;
+                            В собственности 4 вагоноремонтных депо, 14 цехов текущего отцепочного ремонта вагонов и 1 пункт подготовки вагонов
                         </div>
                     </div>
                     <div class="row mb-sm-2">
@@ -142,7 +142,7 @@
                             <img src="{{asset('images/advant-3.png')}}" alt="" width="45" height="45">
                         </div>
                         <div class="col-md-9 col-lg-9 col-9 text-left fw-semibold pt-2">
-                            Представители нашей компании присутствуют на 60-ти основных станциях для организации контроля качества ремонта вагонов;
+                            Представители нашей компании присутствуют на 60-ти основных станциях для организации контроля качества ремонта вагонов
                         </div>
                     </div>
                 </div>
@@ -152,7 +152,7 @@
                             <img src="{{asset('images/advant-4.png')}}" class="mb-4" alt="" width="45" height="45">
                         </div>
                         <div class="col-md-9 col-lg-9 col-9 text-left fw-semibold">
-                            Имеется более 50-ти специализированных вагонов для перевозки колесных пар и запасных частей;
+                            Имеется более 50-ти специализированных вагонов для перевозки колесных пар и запасных частей
                         </div>
                     </div>
                     <div class="row">
@@ -160,7 +160,7 @@
                             <img src="{{asset('images/advant-5.png')}}" class="mb-4 mt-3" alt="" width="45" height="45">
                         </div>
                         <div class="col-md-9 col-lg-9 col-9 text-left fw-semibold pt-2">
-                            Имеются материальные базы на всех ВРД РК с широкой номенклатурой комплектующих;
+                            Имеются материальные базы на всех ВРД РК с широкой номенклатурой комплектующих
                         </div>
                     </div>
                     <div class="row mb-sm-2">
@@ -168,7 +168,7 @@
                             <img src="{{asset('images/advant-6.png')}}" class="mb-3 mt-3" alt="" width="45" height="45">
                         </div>
                         <div class="col-md-9 col-lg-9 col-9 text-left fw-semibold">
-                            Создан диспетчерский центр круглосуточно осуществляет контроль за вагонами на сервисном обслуживании.
+                            Создан диспетчерский центр, который круглосуточно осуществляет контроль за вагонами на сервисном обслуживании
                         </div>
                     </div>
                 </div>
@@ -178,7 +178,7 @@
                             <img src="{{asset('images/advant-7.png')}}" class="mb-4" alt="" width="45" height="45">
                         </div>
                         <div class="col-md-9 col-lg-9 col-9 text-left fw-semibold">
-                            Нашими партнерами являются все вагоноремонтные предприятия Республики Казахстана и СНГ в части проведения КР, ДР, ТОР;
+                            Нашими партнерами являются все вагоноремонтные предприятия Республики Казахстана и СНГ в части проведения КР, ДР, ТОР
                         </div>
                     </div>
                 </div>
@@ -442,8 +442,8 @@
                 <div class="col-md-4 col-lg-4 mb-5">
                     <div class="client-review">
                         <div class="name position-relative">
-                            <img class="img-fluid" src="images/part-2.png" alt="">
-                            <h6 class="mt-4 fw-semibold">Камкор Менеджмент</h6>
+                            <img class="img-fluid" src="images/part-4.png" alt="">
+                            <h6 class="mt-4 fw-semibold">АО «Қазтеміртранс»</h6>
                         </div>
                     </div>
                 </div>
@@ -458,16 +458,16 @@
                 <div class="col-md-4 col-lg-4 mb-5">
                     <div class="client-review">
                         <div class="name position-relative">
-                            <img class="img-fluid" src="images/part-4.png" alt="">
-                            <h6 class="mt-4 fw-semibold">АО «Қазтеміртранс»</h6>
+                            <img class="img-fluid" src="images/part-5.png" alt="">
+                            <h6 class="mt-4 fw-semibold">ТОО «КТЖ - Грузовые перевозки»</h6>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-4 mb-5">
                     <div class="client-review">
                         <div class="name position-relative">
-                            <img class="img-fluid" src="images/part-5.png" alt="">
-                            <h6 class="mt-4 fw-semibold">ТОО «КТЖ - Грузовые перевозки»</h6>
+                            <img class="img-fluid" src="images/part-8.png" alt="">
+                            <h6 class="mt-4 fw-semibold">ТОО «Astana Railway Services»</h6>
                         </div>
                     </div>
                 </div>
@@ -490,8 +490,8 @@
                 <div class="col-md-4 col-lg-4 mb-5">
                     <div class="client-review">
                         <div class="name position-relative">
-                            <img class="img-fluid" src="images/part-8.png" alt="">
-                            <h6 class="mt-4 fw-semibold">ТОО «Astana Railway Services»</h6>
+                            <img class="img-fluid" src="images/part-2.png" alt="">
+                            <h6 class="mt-4 fw-semibold">Камкор Менеджмент</h6>
                         </div>
                     </div>
                 </div>
@@ -701,21 +701,22 @@
             <div class="row align-items-center rounded p-4">
                 <div class="col-lg-6">
                     <h3 class="mb-4 fw-semibold">Оставить заявку</h3>
-                    <form method="post" name="myForm">
+                    <form method="post" action="/send">
+                        @csrf
                         <span id="error-msg"></span>
                         <div class="row">
                             <div class="col-12">
-                                <div class="row">
-                                    <!-- end col -->
-                                    <div class="col-12 mb-3">
-                                        <input type="text" class="form-control" name="phone" placeholder="Телефон *"/>
+                                    <div class="row">
+                                        <!-- end col -->
+                                        <div class="col-12 mb-3">
+                                            <input type="text" class="form-control" name="phone" placeholder="Телефон *"/>
+                                        </div>
+                                        <!-- end col -->
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-primary mt-2 fw-semibold">Оставить заявку</button>
+                                        </div>
+                                        <!-- end col -->
                                     </div>
-                                    <!-- end col -->
-                                    <div class="col-12">
-                                        <input type="button" id="submit" name="send" class="btn btn-primary mt-2 fw-semibold" value="Оставить заявку" />
-                                    </div>
-                                    <!-- end col -->
-                                </div>
                             </div>
                         </div>
                         <!-- end row -->

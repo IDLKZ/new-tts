@@ -21,3 +21,5 @@ Route::get('/management', [FrontController::class, 'management'])->name('managem
 Auth::routes(['register' => false]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::post('/send', [FrontController::class,'sendMail'])->name('send');

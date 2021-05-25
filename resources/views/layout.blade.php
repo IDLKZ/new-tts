@@ -5,8 +5,8 @@
     <meta charset="utf-8" />
     <title>Temir Trans Service</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Premium Bootstrap 5 Template" />
-    <meta name="keywords" content="bootstrap 5, premium, marketing, multipurpose" />
+    <meta name="description" content="Ремонт вагонов в Казахстане" />
+    <meta name="keywords" content="Темир Транс Сервис, Temir Trans Service, TemirTransService, Ремонт вагонов, Ремонт вагонов в Казахстане" />
     <meta content="Themesdesign" name="author" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
