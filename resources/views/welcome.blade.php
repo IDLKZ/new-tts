@@ -91,23 +91,44 @@
 @endpush
 @section('content')
 
-    <!-- start hero -->
-    <section class="hero-2 position-relative overflow-hidden" id="home">
-        <div class="container">
-            <div class="row align-items-center justify-content-start text-left">
-                <div class="col-lg-6">
-                    <h1 class="hero-2-title fw-700 text-white mb-3 pb-2">Темир Транс Сервис</h1>
-                    <h6 class="text-white lh-base fw-700 mb-4 pb-3">
-                        ТОО «ТемирТрансСервис» предоставляет полный комплекс услуг по ремонту грузовых вагонов и поставке запасных частей, как на территории Республики Казахстан, так и на территории СНГ.
-                    </h6>
-{{--                    <a class="fancybox button button-play" data-fancybox="" href="https://vimeo.com/248419121"></a>--}}
-                    <a data-fancybox href="https://www.youtube.com/watch?v=YHf35s1hPZw" class="play-btn"></a>
+    @if ($mainBlock)
+        <!-- start hero -->
+        <section class="hero-2 position-relative overflow-hidden" id="home" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('/uploads/{{$mainBlock->bg}}') center no-repeat;">
+            <div class="container">
+                <div class="row align-items-center justify-content-start text-left">
+                    <div class="col-lg-6">
+                        <h1 class="hero-2-title fw-700 text-white mb-3 pb-2">{{$mainBlock->title}}</h1>
+                        <h6 class="text-white lh-base fw-700 mb-4 pb-3">
+                            {{$mainBlock->content}}
+                        </h6>
+                        {{--                    <a class="fancybox button button-play" data-fancybox="" href="https://vimeo.com/248419121"></a>--}}
+                        <a data-fancybox href="{{$mainBlock->url_video}}" class="play-btn"></a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- end container -->
-    </section>
-    <!-- end hero -->
+            <!-- end container -->
+        </section>
+        <!-- end hero -->
+    @else
+        <!-- start hero -->
+        <section class="hero-2 position-relative overflow-hidden" id="home">
+            <div class="container">
+                <div class="row align-items-center justify-content-start text-left">
+                    <div class="col-lg-6">
+                        <h1 class="hero-2-title fw-700 text-white mb-3 pb-2">Темир Транс Сервис</h1>
+                        <h6 class="text-white lh-base fw-700 mb-4 pb-3">
+                            ТОО «ТемирТрансСервис» предоставляет полный комплекс услуг по ремонту грузовых вагонов и поставке запасных частей, как на территории Республики Казахстан, так и на территории СНГ.
+                        </h6>
+                        {{--                    <a class="fancybox button button-play" data-fancybox="" href="https://vimeo.com/248419121"></a>--}}
+                        <a data-fancybox href="https://www.youtube.com/watch?v=YHf35s1hPZw" class="play-btn"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- end container -->
+        </section>
+        <!-- end hero -->
+    @endif
+
 
     <!-- start solution -->
     <section class="section">
@@ -119,140 +140,218 @@
                         Преимущества сотрудничества:</h4>
                 </div>
             </div>
-            <div class="row adv">
-                <div class="col-md-4 col-lg-4 col-sm-12">
-                    <div class="row">
-                        <div class="col-md-3 col-lg-3 col-3 row justify-content-center align-items-center">
-                            <img src="{{asset('images/advant-1.png')}}" alt="" width="45" height="45">
+            @if ($advantages)
+                <div class="row adv">
+                    @foreach($advantages as $data)
+                        <div class="col-md-4 col-lg-4 col-sm-12">
+                        @foreach($data as $adv)
+                            <div class="row mb-2">
+                                <div class="col-md-3 col-lg-3 col-3 row justify-content-center align-items-start">
+                                    <img src="{{$adv->getImage()}}" alt="" width="45" height="45">
+                                </div>
+                                <div class="col-md-9 col-lg-9 col-9 text-left fw-semibold">
+                                    {{$adv->content}}
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                    @endforeach
+                </div>
+            @else
+                <div class="row adv">
+                    <div class="col-md-4 col-lg-4 col-sm-12">
+                        <div class="row">
+                            <div class="col-md-3 col-lg-3 col-3 row justify-content-center align-items-center">
+                                <img src="{{asset('images/advant-1.png')}}" alt="" width="45" height="45">
+                            </div>
+                            <div class="col-md-9 col-lg-9 col-9 text-left fw-semibold">
+                                10 региональных участков охватывают всю территорию Казахстана
+                            </div>
                         </div>
-                        <div class="col-md-9 col-lg-9 col-9 text-left fw-semibold">
-                            10 региональных участков охватывают всю территорию Казахстана
+                        <div class="row">
+                            <div class="col-md-3 col-lg-3 col-3 row justify-content-center align-items-center">
+                                <img src="{{asset('images/advant-2.png')}}" alt="" width="45" height="45">
+                            </div>
+                            <div class="col-md-9 col-lg-9 col-9 text-left fw-semibold pt-2">
+                                В собственности 4 вагоноремонтных депо, 14 цехов текущего отцепочного ремонта вагонов и 1 пункт подготовки вагонов
+                            </div>
+                        </div>
+                        <div class="row mb-sm-2">
+                            <div class="col-md-3 col-lg-3 col-3 row justify-content-center align-items-center">
+                                <img src="{{asset('images/advant-3.png')}}" alt="" width="45" height="45">
+                            </div>
+                            <div class="col-md-9 col-lg-9 col-9 text-left fw-semibold pt-2">
+                                Представители нашей компании присутствуют на 60-ти основных станциях для организации контроля качества ремонта вагонов
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-3 col-lg-3 col-3 row justify-content-center align-items-center">
-                            <img src="{{asset('images/advant-2.png')}}" alt="" width="45" height="45">
+                    <div class="col-md-4 col-lg-4 col-sm-12">
+                        <div class="row">
+                            <div class="col-md-3 col-lg-3 col-3 row justify-content-center align-items-center">
+                                <img src="{{asset('images/advant-4.png')}}" class="mb-4" alt="" width="45" height="45">
+                            </div>
+                            <div class="col-md-9 col-lg-9 col-9 text-left fw-semibold">
+                                Имеется более 50-ти специализированных вагонов для перевозки колесных пар и запасных частей
+                            </div>
                         </div>
-                        <div class="col-md-9 col-lg-9 col-9 text-left fw-semibold pt-2">
-                            В собственности 4 вагоноремонтных депо, 14 цехов текущего отцепочного ремонта вагонов и 1 пункт подготовки вагонов
+                        <div class="row">
+                            <div class="col-md-3 col-lg-3 col-3 row justify-content-center align-items-center">
+                                <img src="{{asset('images/advant-5.png')}}" class="mb-4 mt-3" alt="" width="45" height="45">
+                            </div>
+                            <div class="col-md-9 col-lg-9 col-9 text-left fw-semibold pt-2">
+                                Имеются материальные базы на всех ВРД РК с широкой номенклатурой комплектующих
+                            </div>
+                        </div>
+                        <div class="row mb-sm-2">
+                            <div class="col-md-3 col-lg-3 col-3 row justify-content-center align-items-center">
+                                <img src="{{asset('images/advant-6.png')}}" class="mb-3 mt-3" alt="" width="45" height="45">
+                            </div>
+                            <div class="col-md-9 col-lg-9 col-9 text-left fw-semibold">
+                                Создан диспетчерский центр, который круглосуточно осуществляет контроль за вагонами на сервисном обслуживании
+                            </div>
                         </div>
                     </div>
-                    <div class="row mb-sm-2">
-                        <div class="col-md-3 col-lg-3 col-3 row justify-content-center align-items-center">
-                            <img src="{{asset('images/advant-3.png')}}" alt="" width="45" height="45">
-                        </div>
-                        <div class="col-md-9 col-lg-9 col-9 text-left fw-semibold pt-2">
-                            Представители нашей компании присутствуют на 60-ти основных станциях для организации контроля качества ремонта вагонов
+                    <div class="col-md-4 col-lg-4 col-sm-12">
+                        <div class="row">
+                            <div class="col-md-3 col-lg-3 col-3 row justify-content-center align-items-center">
+                                <img src="{{asset('images/advant-7.png')}}" class="mb-4" alt="" width="45" height="45">
+                            </div>
+                            <div class="col-md-9 col-lg-9 col-9 text-left fw-semibold">
+                                Нашими партнерами являются все вагоноремонтные предприятия Республики Казахстана и СНГ в части проведения КР, ДР, ТОР
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-4 col-sm-12">
-                    <div class="row">
-                        <div class="col-md-3 col-lg-3 col-3 row justify-content-center align-items-center">
-                            <img src="{{asset('images/advant-4.png')}}" class="mb-4" alt="" width="45" height="45">
-                        </div>
-                        <div class="col-md-9 col-lg-9 col-9 text-left fw-semibold">
-                            Имеется более 50-ти специализированных вагонов для перевозки колесных пар и запасных частей
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3 col-lg-3 col-3 row justify-content-center align-items-center">
-                            <img src="{{asset('images/advant-5.png')}}" class="mb-4 mt-3" alt="" width="45" height="45">
-                        </div>
-                        <div class="col-md-9 col-lg-9 col-9 text-left fw-semibold pt-2">
-                            Имеются материальные базы на всех ВРД РК с широкой номенклатурой комплектующих
-                        </div>
-                    </div>
-                    <div class="row mb-sm-2">
-                        <div class="col-md-3 col-lg-3 col-3 row justify-content-center align-items-center">
-                            <img src="{{asset('images/advant-6.png')}}" class="mb-3 mt-3" alt="" width="45" height="45">
-                        </div>
-                        <div class="col-md-9 col-lg-9 col-9 text-left fw-semibold">
-                            Создан диспетчерский центр, который круглосуточно осуществляет контроль за вагонами на сервисном обслуживании
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-4 col-sm-12">
-                    <div class="row">
-                        <div class="col-md-3 col-lg-3 col-3 row justify-content-center align-items-center">
-                            <img src="{{asset('images/advant-7.png')}}" class="mb-4" alt="" width="45" height="45">
-                        </div>
-                        <div class="col-md-9 col-lg-9 col-9 text-left fw-semibold">
-                            Нашими партнерами являются все вагоноремонтные предприятия Республики Казахстана и СНГ в части проведения КР, ДР, ТОР
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @endif
+
         </div>
     </section>
     <!-- end solution -->
 
-    <!-- start feature -->
-    <section class="section bg-light overflow-hidden" id="feature">
-        <div class="container">
-            <div class="row align-items-center">
-                <h3 class="fw-semibold lh-base mb-4 text-center">Сервисное обслуживание</h3>
-                <div class="col-lg-7 mt-lg-0 mt-5 pt-lg-0 pt-4 m-m-0">
+    @if ($servicesOne)
+        <!-- start feature -->
+        <section class="section bg-light overflow-hidden" id="feature">
+            <div class="container">
+                <div class="row align-items-center">
+                    <h3 class="fw-semibold lh-base mb-4 text-center">Сервисное обслуживание</h3>
+                    <div class="col-lg-7 mt-lg-0 mt-5 pt-lg-0 pt-4 m-m-0">
 
-                    <p class="fw-semibold">
-                        Сервисное обслуживание - это комплексная услуга, включающая полный цикл работ по ремонту вагонов, отслеживания технического состояния вагонов, поставку запчастей и другие услуги, связанные с содержанием вагонного парка в технически исправном состоянии.
-                    </p><br>
-                    <p>В сервисное обслуживание включены расходы на следующие виды работ:
-                    </p>
-
-                    <div class="row mt-5 service-img">
-                        <div class="col-md-6 col-lg-6 col-sm-12 d-flex mb-sm-2">
-                            <img src="/images/serv-7.png" alt="">
-                            <span>Организация работ по ремонтам (деповской, текущий отцепочный ремонт)</span>
+                        <p class="fw-semibold">
+                            Сервисное обслуживание - это комплексная услуга, включающая полный цикл работ по ремонту вагонов, отслеживания технического состояния вагонов, поставку запчастей и другие услуги, связанные с содержанием вагонного парка в технически исправном состоянии.
+                        </p><br>
+                        <p>В сервисное обслуживание включены расходы на следующие виды работ:
+                        </p>
+                        @foreach($servicesOne as $items)
+                            <div class="row mt-4 service-img">
+                                @foreach ($items as $item)
+                                    <div class="col-md-6 col-lg-6 col-sm-12 d-flex mb-sm-2">
+                                        <img src="{{$item->getImage()}}" alt="">
+                                        <span>{{$item->content}}</span>
+                                    </div>
+                                @endforeach
                         </div>
-
-                        <div class="col-md-6 col-lg-6 col-sm-12 d-flex">
-                            <img src="/images/serv-1.png" alt="">
-                            <span>Хранение запасных частей</span>
-                        </div>
+                        @endforeach
                     </div>
-                    <div class="row mt-4 service-img">
-                        <div class="col-md-6 col-lg-6 col-sm-12 d-flex mb-sm-2">
-                            <img src="/images/serv-8.png" alt="">
-                            <span>Обеспечение необходимыми запасными частями (колесные пары, литые детали тележек, автосцепки и т.д.)</span>
-                        </div>
-
-                        <div class="col-md-6 col-lg-6 col-sm-12 d-flex">
-                            <img src="/images/serv-2.png" alt="">
-                            <span>Круглосуточное слежение за вагонами</span>
-                        </div>
-                    </div>
-                    <div class="row mt-4 service-img">
-                        <div class="col-md-6 col-lg-6 col-sm-12 d-flex mb-sm-2">
-                            <img src="/images/serv-6.png" alt="">
-                            <span>Ремонт запасных частей (колесные пары, литые детали тележек, автосцепки и т.д.)</span>
-                        </div>
-
-                        <div class="col-md-6 col-lg-6 col-sm-12 d-flex">
-                            <img src="/images/serv-5.png" alt="">
-                            <span>Хранение и дальнейший выкуп металлолома у заказчика</span>
-                        </div>
-                    </div>
-                    <div class="row mt-4 service-img">
-                        <div class="col-md-6 col-lg-6 col-sm-12 d-flex mb-sm-2">
-                            <img src="/images/serv-4.png" alt="">
-                            <span>Доставка запасных частей к месту ремонта</span>
-                        </div>
-
-                        <div class="col-md-6 col-lg-6 col-sm-12 d-flex">
-                            <img src="/images/serv-3.png" alt="">
-                            <span>Оплата простоя вагонов в ожидании ремонта на станционных путях</span>
-                        </div>
+                    <div class="col-lg-5 bg-service text-center m-mt-40">
+                        <img src="{{asset('images/bg-service.png')}}" alt="">
                     </div>
                 </div>
-                <div class="col-lg-5 bg-service text-center m-mt-40">
-                    <img src="{{asset('images/bg-service.png')}}" alt="">
+            </div>
+        </section>
+        <!-- end feature -->
+    @else
+        <!-- start feature -->
+        <section class="section bg-light overflow-hidden" id="feature">
+            <div class="container">
+                <div class="row align-items-center">
+                    <h3 class="fw-semibold lh-base mb-4 text-center">Сервисное обслуживание</h3>
+                    <div class="col-lg-7 mt-lg-0 mt-5 pt-lg-0 pt-4 m-m-0">
+
+                        <p class="fw-semibold">
+                            Сервисное обслуживание - это комплексная услуга, включающая полный цикл работ по ремонту вагонов, отслеживания технического состояния вагонов, поставку запчастей и другие услуги, связанные с содержанием вагонного парка в технически исправном состоянии.
+                        </p><br>
+                        <p>В сервисное обслуживание включены расходы на следующие виды работ:
+                        </p>
+
+                        <div class="row mt-5 service-img">
+                            <div class="col-md-6 col-lg-6 col-sm-12 d-flex mb-sm-2">
+                                <img src="/images/serv-7.png" alt="">
+                                <span>Организация работ по ремонтам (деповской, текущий отцепочный ремонт)</span>
+                            </div>
+
+                            <div class="col-md-6 col-lg-6 col-sm-12 d-flex">
+                                <img src="/images/serv-1.png" alt="">
+                                <span>Хранение запасных частей</span>
+                            </div>
+                        </div>
+                        <div class="row mt-4 service-img">
+                            <div class="col-md-6 col-lg-6 col-sm-12 d-flex mb-sm-2">
+                                <img src="/images/serv-8.png" alt="">
+                                <span>Обеспечение необходимыми запасными частями (колесные пары, литые детали тележек, автосцепки и т.д.)</span>
+                            </div>
+
+                            <div class="col-md-6 col-lg-6 col-sm-12 d-flex">
+                                <img src="/images/serv-2.png" alt="">
+                                <span>Круглосуточное слежение за вагонами</span>
+                            </div>
+                        </div>
+                        <div class="row mt-4 service-img">
+                            <div class="col-md-6 col-lg-6 col-sm-12 d-flex mb-sm-2">
+                                <img src="/images/serv-6.png" alt="">
+                                <span>Ремонт запасных частей (колесные пары, литые детали тележек, автосцепки и т.д.)</span>
+                            </div>
+
+                            <div class="col-md-6 col-lg-6 col-sm-12 d-flex">
+                                <img src="/images/serv-5.png" alt="">
+                                <span>Хранение и дальнейший выкуп металлолома у заказчика</span>
+                            </div>
+                        </div>
+                        <div class="row mt-4 service-img">
+                            <div class="col-md-6 col-lg-6 col-sm-12 d-flex mb-sm-2">
+                                <img src="/images/serv-4.png" alt="">
+                                <span>Доставка запасных частей к месту ремонта</span>
+                            </div>
+
+                            <div class="col-md-6 col-lg-6 col-sm-12 d-flex">
+                                <img src="/images/serv-3.png" alt="">
+                                <span>Оплата простоя вагонов в ожидании ремонта на станционных путях</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 bg-service text-center m-mt-40">
+                        <img src="{{asset('images/bg-service.png')}}" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end feature -->
+    @endif
+
+@if ($servicesSecond)
+    <!-- start services -->
+    <section class="section" id="service">
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="col-lg-5 bg-service2 text-left">
+                    <img src="{{asset('images/bg-service2.png')}}" alt="">
+                </div>
+                <div class="col-lg-7 mt-lg-0 mt-md-5 mt-sm-0 pt-lg-0 pt-4">
+                    @foreach($servicesSecond as $items)
+                        <div class="row mb-md-5 mt-sm-0 service-img">
+                            @foreach ($items as $item)
+                                <div class="col-md-6 col-lg-6 col-sm-12 d-flex mb-sm-2">
+                                    <img src="{{$item->getImage()}}" alt="">
+                                    <span>{{$item->content}}</span>
+                                </div>
+                            @endforeach
+                        </div>
+                    @endforeach
                 </div>
             </div>
         </div>
     </section>
-    <!-- end feature -->
-
+    <!-- end servies -->
+@else
     <!-- start services -->
     <section class="section" id="service">
         <div class="container">
@@ -262,15 +361,15 @@
                 </div>
                 <div class="col-lg-7 mt-lg-0 mt-md-5 mt-sm-0 pt-lg-0 pt-4">
                     <div class="row mt-sm-0 service-img">
-                        <div class="col-md-6 col-lg-6 col-sm-12 d-flex mb-sm-2">
-                            <img src="/images/serv-9.png" alt="">
-                            <span>Организация передислокации вагонов от станции отцепки до станции ремонта</span>
+                            <div class="col-md-6 col-lg-6 col-sm-12 d-flex mb-sm-2">
+                                <img src="/images/serv-9.png" alt="">
+                                <span>Организация передислокации вагонов от станции отцепки до станции ремонта</span>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-sm-12 d-flex mb-sm-2">
+                                <img src="/images/serv-10.png" alt="">
+                                <span>Участие в расследованиях случаев нарушений безопасности движения</span>
+                            </div>
                         </div>
-                        <div class="col-md-6 col-lg-6 col-sm-12 d-flex mb-sm-2">
-                            <img src="/images/serv-10.png" alt="">
-                            <span>Участие в расследованиях случаев нарушений безопасности движения</span>
-                        </div>
-                    </div>
                     <div class="row mt-md-5 mt-sm-0 service-img">
                         <div class="col-md-6 col-lg-6 col-sm-12 d-flex mb-sm-2">
                             <img src="/images/serv-11.png" alt="">
@@ -302,84 +401,105 @@
         </div>
     </section>
     <!-- end servies -->
+@endif
 
-    <!-- start structure -->
-    <section class="section" id="structure">
-        <div class="container">
-            <h3 class="fw-semibold lh-base mb-4 text-center">Структура</h3>
-            <div class="row justify-content-center">
-                <div class="col-md-12 col-lg-12 col-sm-12 mb-3">
-                    <div class="card h-auto">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">ТОО «ТемирТрансСервис» - управляющая компания</h5>
+    @if ($structures)
+        <!-- start structure -->
+        <section class="section" id="structure">
+            <div class="container">
+                <h3 class="fw-semibold lh-base mb-4 text-center">Структура</h3>
+                <div class="row justify-content-center">
+                    <div class="col-md-12 col-lg-12 col-sm-12 mb-3">
+                        <div class="card h-auto">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">ТОО «ТемирТрансСервис» - управляющая компания</h5>
+                            </div>
                         </div>
                     </div>
+                @foreach($structures as $structure)
+                    <div class="col-md-4 col-lg-4 col-sm-12 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">{{$structure->title}}</h5>
+                                <p class="card-text">{{$structure->content}}</p>
+                            </div>
+                        </div>
+                    </div>
+                        @endforeach
                 </div>
+            </div>
+        </section>
+        <!-- end structure -->
+    @else
+        <!-- start structure -->
+        <section class="section" id="structure">
+            <div class="container">
+                <h3 class="fw-semibold lh-base mb-4 text-center">Структура</h3>
+                <div class="row justify-content-center">
+                    <div class="col-md-12 col-lg-12 col-sm-12 mb-3">
+                        <div class="card h-auto">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">ТОО «ТемирТрансСервис» - управляющая компания</h5>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="col-md-4 col-lg-4 col-sm-12 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">ТОО «Вагонный сервис» - дочерняя компания</h5>
-                            <p class="card-text">
-                                Компания предоставляет полный комплекс услуг по организации текущего отцепочного ремонта грузовых вагонов. В собственности имеется 14 цехов на станциях (Кандыагаш, Тобол, Есиль, Нур-Султан, Караганда-Сортировочная, Карабас, Екибастуз-2, Павлодар, Алматы-1, Алтынколь, Достык, Актогай)
-                            </p>
+                    <div class="col-md-4 col-lg-4 col-sm-12 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">ТОО «Вагонный сервис» - дочерняя компания</h5>
+                                <p class="card-text">
+                                    Компания предоставляет полный комплекс услуг по организации текущего отцепочного ремонта грузовых вагонов. В собственности имеется 14 цехов на станциях (Кандыагаш, Тобол, Есиль, Нур-Султан, Караганда-Сортировочная, Карабас, Екибастуз-2, Павлодар, Алматы-1, Алтынколь, Достык, Актогай)
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-lg-4 col-sm-12 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">ТОО «Торговый Дом ТТС» -  дочерняя компания</h5>
-                            <p class="card-text">
-                                Один из крупных трейдеров-поставщиков в железнодорожной отрасли Республики Казахстан. Основным видом деятельности компании является оказание комплексных услуг по обеспечению запасными частями грузовых вагонов, доставке и ремонту запасных частей с использование собственных материалов
-                            </p>
+                    <div class="col-md-4 col-lg-4 col-sm-12 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">ТОО «Торговый Дом ТТС» -  дочерняя компания</h5>
+                                <p class="card-text">
+                                    Один из крупных трейдеров-поставщиков в железнодорожной отрасли Республики Казахстан. Основным видом деятельности компании является оказание комплексных услуг по обеспечению запасными частями грузовых вагонов, доставке и ремонту запасных частей с использование собственных материалов
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-{{--                <div class="col-md-4 col-lg-4 col-sm-12 mb-3">--}}
-{{--                    <div class="card">--}}
-{{--                        <div class="card-body">--}}
-{{--                            <h5 class="card-title">ТОО «Astana Railway Services» -  дочерняя компания</h5>--}}
-{{--                            <p class="card-text">--}}
-{{--                                Сеть вагоноремонтных предприятий на территории Республики Казахстан. В собственности находятся 4 вагоноремонтных депо на станциях Арысь, Балхаш, Кушмурун и Уральск. Силами ТОО «Astana Railway Services» проводится 16% всех плановых видов ремонта в Республики Казахстан. Клиентами являются крупнейшие операторы подвижного состава--}}
-{{--                            </p>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-                <div class="col-md-4 col-lg-4 col-sm-12 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">ТОО «ITMD» - дочерняя компания</h5>
-                            <p class="card-text">
-                                Осуществляет автоматизацию и модернизацию устаревших бизнес процессов, модернизацию автоматизированных систем учета вагонов
-                            </p>
+                    <div class="col-md-4 col-lg-4 col-sm-12 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">ТОО «ITMD» - дочерняя компания</h5>
+                                <p class="card-text">
+                                    Осуществляет автоматизацию и модернизацию устаревших бизнес процессов, модернизацию автоматизированных систем учета вагонов
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-lg-4 col-sm-12 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">ТОО «Инспекторский Центр на железнодорожном транспорте» -  дочерняя компания</h5>
-                            <p class="card-text">
-                                Осуществляет инспекторскую приемку вагонов и комплектующих, а также оказывает консультационную поддержку по техническим вопросам отечественных товаропроизводителей и вагоноремонтных предприятий
-                            </p>
+                    <div class="col-md-4 col-lg-4 col-sm-12 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">ТОО «Инспекторский Центр на железнодорожном транспорте» -  дочерняя компания</h5>
+                                <p class="card-text">
+                                    Осуществляет инспекторскую приемку вагонов и комплектующих, а также оказывает консультационную поддержку по техническим вопросам отечественных товаропроизводителей и вагоноремонтных предприятий
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-lg-4 col-sm-12 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">ТОО «Первая мультимодальная компания» - дочерняя компания</h5>
-                            <p class="card-text">
-                                Оказывает полный спектр транспортно-логистических услуг. Осуществляет лучший комплекс транспортно-логистических решений в Казахстане и СНГ. В парке имеется более 3 000 вагонов
-                            </p>
+                    <div class="col-md-4 col-lg-4 col-sm-12 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">ТОО «Первая мультимодальная компания» - дочерняя компания</h5>
+                                <p class="card-text">
+                                    Оказывает полный спектр транспортно-логистических услуг. Осуществляет лучший комплекс транспортно-логистических решений в Казахстане и СНГ. В парке имеется более 3 000 вагонов
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- end structure -->
+        </section>
+        <!-- end structure -->
+    @endif
+
 
     <!-- start faq -->
     <section class="section border-top overflow-hidden" id="faq">
@@ -512,7 +632,43 @@
     <section class="section pt-0" id="client">
         <div class="container">
             <h2 class="text-center mb-5">Руководство</h2>
-            <div class="row">
+            @if(count($managers))
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <div class="accordion" id="accordionExample" >
+                            @foreach($managers as $manager)
+                                <div class="accordion-item">
+                                    <div class="row " id="heading{{$manager->id}}" data-bs-toggle="collapse" data-bs-target="#collapse{{$manager->id}}" aria-expanded="true" aria-controls="collapse{{$manager->id}}">
+                                        <div class="col-md-6 col-lg-6 col-sm-6 text-center">
+                                            <h6>{{$manager->name}}</h6>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6 col-sm-6 text-left">
+                                            <p>{{$manager->role}}</p>
+                                        </div>
+                                    </div>
+
+                                    <div id="collapse{{$manager->id}}" class="accordion-collapse collapse" aria-labelledby="heading{{$manager->id}}" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-4 text-center mb-sm-2">
+                                                        <img src="{{$manager->getImage()}}" width=200 alt="">
+                                                    </div>
+                                                    <div class="col-md-8 my-text pt-2">
+                                                        <p class="card-text">{!! $manager->description !!}</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
+
+                    </div>
+                </div>
+            @else
+                <div class="row">
                 <div class="col-md-8 offset-md-2">
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
@@ -690,6 +846,7 @@
                     </div>
                 </div>
             </div>
+            @endif
         </div>
     </section>
 
@@ -754,7 +911,7 @@
                                         </svg>
                                     </div>
                                     <div class="col-9">
-                                        <div><b>+7 (7172) 61-06-26</b></div>
+                                        <div><b>{{$contact->phone ? $contact->phone : '+7 (7172) 61-06-26'}}</b></div>
                                     </div>
                                 </div>
                                 <div class="col-md-12 row justify-content-start align-items-center fw-700">
@@ -778,7 +935,7 @@
                                         </svg>
                                     </div>
                                     <div class="col-9">
-                                        <b>tts@ttservice.kz</b>
+                                        <b>{{$contact->email ? $contact->email : 'tts@ttservice.kz'}}</b>
                                     </div>
                                 </div>
                                 <div class="col-md-12 row justify-content-start align-items-center fw-700">
@@ -802,8 +959,7 @@
                                         </svg>
                                     </div>
                                     <div class="col-9">
-                                        <b>Республика Казахстан,
-                                            г.Нур-Султан, ул.Кунаева 10, 26 этаж.</b>
+                                        <b>{{$contact->address ? $contact->address : 'Республика Казахстан, г.Нур-Султан, ул.Кунаева 10, 26 этаж.'}}</b>
                                     </div>
                                 </div>
                             </div>
@@ -812,9 +968,9 @@
                 </div>
                 <div class="col-lg-4 d-flex align-items-end justify-content-around mt-3">
 {{--                    <div class="col-md-4 pb-4">--}}
-                        <a href="#"><img src="https://img.icons8.com/carbon-copy/40/000000/facebook-new.png"/></a>
-                        <a href="#"><img src="https://img.icons8.com/carbon-copy/40/000000/twitter--v1.png"/></a>
-                        <a href="#"><img src="https://img.icons8.com/carbon-copy/40/000000/instagram-new.png"/></a>
+                        <a href="{{$contact->facebook ? $contact->facebook : 'javascript:void(0)'}}"><img src="https://img.icons8.com/carbon-copy/40/000000/facebook-new.png"/></a>
+                        <a href="{{$contact->twitter ? $contact->twitter : 'javascript:void(0)'}}"><img src="https://img.icons8.com/carbon-copy/40/000000/twitter--v1.png"/></a>
+                        <a href="{{$contact->instagram ? $contact->instagram : 'javascript:void(0)'}}"><img src="https://img.icons8.com/carbon-copy/40/000000/instagram-new.png"/></a>
 {{--                    </div>--}}
                 </div>
             </div>

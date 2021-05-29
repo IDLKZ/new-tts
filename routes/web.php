@@ -23,3 +23,18 @@ Auth::routes(['register' => false]);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::post('/send', [FrontController::class,'sendMail'])->name('send');
+
+
+Route::resource('mainBlocks', App\Http\Controllers\MainBlockController::class);
+
+Route::resource('advantageBlocks', App\Http\Controllers\AdvantageBlockController::class);
+
+Route::resource('serviceOnes', App\Http\Controllers\ServiceOneController::class);
+
+Route::resource('serviceSeconds', App\Http\Controllers\ServiceSecondController::class);
+
+Route::resource('structures', App\Http\Controllers\StructureController::class);
+
+Route::resource('teams', App\Http\Controllers\TeamController::class);
+
+Route::resource('contacts', App\Http\Controllers\ContactController::class);
