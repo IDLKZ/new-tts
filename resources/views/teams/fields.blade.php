@@ -1,0 +1,30 @@
+<!-- Name Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('name', 'Name:') !!}
+    {!! Form::text('name', null, ['class' => 'form-control','maxlength' => 255,'maxlength' => 255]) !!}
+</div>
+
+<!-- Role Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('role', 'Role:') !!}
+    {!! Form::text('role', null, ['class' => 'form-control','maxlength' => 255,'maxlength' => 255]) !!}
+</div>
+
+<!-- Description Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('description', 'Description:') !!}
+    {!! Form::textarea('description', null, ['class' => 'form-control']) !!}
+
+</div>
+
+<!-- Img Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('img', 'Img:') !!}
+    {!! Form::file('img', null) !!}
+</div>
+
+<!-- Submit Field -->
+<div class="form-group col-sm-12">
+    {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
+    <a href="{{ route('teams.index') }}" class="btn btn-secondary">Cancel</a>
+</div>
