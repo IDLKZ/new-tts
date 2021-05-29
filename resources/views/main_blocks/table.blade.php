@@ -15,7 +15,7 @@
                 <td>{{ $mainBlock->title }}</td>
             <td>{{ $mainBlock->content }}</td>
             <td>{{ $mainBlock->url_video }}</td>
-            <td>{{ $mainBlock->bg }}</td>
+            <td><img src="{{$mainBlock->getImage()}}" width="50" height="50" alt=""></td>
                 <td>
                     {!! Form::open(['route' => ['mainBlocks.destroy', $mainBlock->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>
