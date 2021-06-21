@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Temir Trans Service</title>
+    <title>Temir Trans Service - ремонт вагонов в Казахстане</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Ремонт вагонов в Казахстане" />
+    <meta name="description" content="ТОО «ТемирТрансСервис» предоставляет полный комплекс услуг по ремонту грузовых вагонов и поставке запасных частей. TemirTransService — ремонт вагонов в Казахстане и на территории стран СНГ" />
     <meta name="keywords" content="Темир Транс Сервис, Temir Trans Service, TemirTransService, Ремонт вагонов, Ремонт вагонов в Казахстане" />
     <meta content="Themesdesign" name="author" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -31,6 +31,7 @@
     <!--End Favicon-->
 
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <link rel="stylesheet" href="{{asset('css/icofont/icofont.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link rel="stylesheet" href="{{asset('css/mystyle.css')}}">
     @stack('page_css')
@@ -40,10 +41,9 @@
 <!-- start navbar -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top sticky" id="navbar">
     <div class="container">
-        <a href="#" class="navbar-brand me-5">
+        <a href="{{route('main')}}" class="navbar-brand me-5">
             <img src="images/logo.png" class="logo-light" alt=""/>
             <img src="images/logo.png" class="logo-dark" alt=""/>
-
         </a>
         <a href="javascript:void(0)" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggle-icon"><i data-feather="menu"></i></span>
@@ -68,7 +68,7 @@
                 </li>
             </ul>
             <div class="mb-4 mb-lg-0">
-                <a href="#" class="btn btn-sm nav-btn btn-primary mb-4 mb-lg-0 ms-auto fw-700" data-bs-toggle="modal" data-bs-target="#exampleModal">ВОЙТИ</a>
+                <a href="#" class="btn btn-sm nav-btn btn-primary mb-4 mb-lg-0 ms-auto fw-700" data-bs-toggle="modal" data-bs-target="#exampleModal">Документы</a>
             </div>
         </div>
     </div>
@@ -130,7 +130,7 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-12">
-                <a href="#" class="text-muted">21tech.kz</a> all rights reserved
+                <a href="javascript:void (0)" class="text-muted">21tech.kz</a> all rights reserved
             </div>
         </div>
         <!-- end row -->
@@ -145,34 +145,67 @@
     <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Войти</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Документы</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form method="post" name="myForm" onsubmit="return validateForm()">
-                    <span id="error-msg"></span>
-                    <div class="row justify-content-center">
-                        <div class="col-md-6 col-sm-12">
+                <div class="container">
+                    <div class="row mt-4 ">
+                        <div class="col-md-12 docs p-3">
                             <div class="row">
-                                <div class="col-md-12 mb-3">
-                                    <label class="fw-medium form-label" for="email">Email</label>
-                                    <input type="email" class="form-control" placeholder="Email *" id="email" />
+                                <div class="col-md-4 col-sm-12 text-center docs-div-icon d-none d-sm-block"><i
+                                        class="icofont-file-document docs-icon-left text-primary"></i></div>
+                                <div class="col-md-4 col-sm-12 d-flex justify-content-center align-items-center"><h4
+                                        class="text-center docs-text-main">Сервисные пакеты</h4></div>
+                                <div class="col-md-4 col-sm-12 text-center docs-div-icon">
+                                    <div class="d-flex justify-content-center"><a class="text-dark"
+                                                                                  href="{{asset('documents/Сервисные_пакеты_ТОО_ТемирТрансСервис.pdf')}}"
+                                                                                  download=""><i
+                                                class="text-danger icofont-file-powerpoint docs-icon"></i><br>Скачать</a>
+                                    </div>
                                 </div>
-
-                                <div class="col-12 mb-3">
-                                    <label class="fw-medium form-label" for="password">Password</label>
-                                    <input type="password" class="form-control" id="password" placeholder="Password *"/>
-                                </div>
-                                <!-- end col -->
-                                <div class="col-12">
-                                    <input type="button" id="submit" name="send" class="btn btn-primary mt-2" value="Войти" />
-                                </div>
-                                <!-- end col -->
                             </div>
                         </div>
                     </div>
-                    <!-- end row -->
-                </form>
+                    <div class="row mt-4 ">
+                        <div class="col-md-12 docs p-3">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12 text-center docs-div-icon d-none d-sm-block"><i
+                                        class="icofont-file-document docs-icon-left text-primary"></i></div>
+                                <div class="col-md-4 col-sm-12 d-flex justify-content-center align-items-center"><h4
+                                        class="text-center docs-text-main">Договор</h4></div>
+                                <div class="col-md-4 col-sm-12 text-center docs-div-icon">
+                                    <div class="d-flex justify-content-around"><a class="text-dark"
+                                                                                  href="{{asset('documents/Договор_по_сервисному_обслуживанию_вагонов.docx')}}"
+                                                                                  download=""><i
+                                                class="text-primary icofont-file-word docs-icon"></i><br>Скачать</a>
+{{--                                        <a--}}
+{{--                                            class="text-dark"--}}
+{{--                                            href="/doc/dogovor1603731786.pdf"--}}
+{{--                                            download=""><i class="text-danger icofont-file-pdf docs-icon"></i><br>Скачать</a>--}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4 ">
+                        <div class="col-md-12 docs p-3">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12 text-center docs-div-icon d-none d-sm-block"><i
+                                        class="icofont-file-document docs-icon-left text-primary"></i></div>
+                                <div class="col-md-4 col-sm-12 d-flex justify-content-center align-items-center"><h4
+                                        class="text-center docs-text-main">Презентация</h4></div>
+                                <div class="col-md-4 col-sm-12 text-center docs-div-icon">
+                                    <div class="d-flex justify-content-center"><a class="text-dark"
+                                                                                  href="{{asset('documents/Темиртрансервис 06.21.pdf')}}"
+                                                                                  download=""><i
+                                                class="text-success icofont-file-presentation docs-icon"></i><br>Скачать</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- end form -->
             </div>
         </div>

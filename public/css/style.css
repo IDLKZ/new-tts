@@ -47,7 +47,7 @@ body {
     cursor: pointer;
 }
 .docs {
-    background: white;
+    background: #f7f7f7;
     border-radius: 24px;
 }
 .service-img img {
