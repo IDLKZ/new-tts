@@ -66,10 +66,13 @@
                 <li class="nav-item">
                     <a class="nav-link fw-700" href="{{route('main')}}#contact">КОНТАКТЫ</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-700" href="{{route('docs')}}">ДОКУМЕНТЫ</a>
+                </li>
             </ul>
-            <div class="mb-4 mb-lg-0">
-                <a href="#" class="btn btn-sm nav-btn btn-primary mb-4 mb-lg-0 ms-auto fw-700" data-bs-toggle="modal" data-bs-target="#exampleModal">Документы</a>
-            </div>
+{{--            <div class="mb-4 mb-lg-0">--}}
+{{--                <a href="#" class="btn btn-sm nav-btn btn-primary mb-4 mb-lg-0 ms-auto fw-700" data-bs-toggle="modal" data-bs-target="#exampleModal">Документы</a>--}}
+{{--            </div>--}}
         </div>
     </div>
     <!-- end container -->
